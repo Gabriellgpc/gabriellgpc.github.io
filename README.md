@@ -1,9 +1,5 @@
 # Luís Gabriel Pereira Condados
 
-<!-- I am a student and researcher at Computing Engineering student currently living in Natal, RN, Brasil. My interests range from technology to programming. I am also interested in education, gaming, and innovation.
-
-You can click the button above to view my portfolio. If you’d like to get in touch, feel free to say hello through any of the social links below. -->
-
 Me chamo Luís Gabriel, tenho mais de 18 anos (dessa forma não preciso ficar atualizando isso todo ano...), sou natural de [Natal/RN](https://pt.wikipedia.org/wiki/Natal_(Rio_Grande_do_Norte)) e me formei em [Engenharia de Computação](https://www.dca.ufrn.br/) em 2020 [UFRN](https://www.ufrn.br/). Pretendo utilizar essa página, principalmente, para mostrar de uma forma um pouco mais organiza alguns dos trabalhos/softwares que já desenvolvi ou estou desenvolvendo, além disso também pretendo deixar/postar alguns tutoriais (a princípio são lembretes para mim mesmo).
 
 Canais/plataforma sociais que utilizo:\
@@ -15,6 +11,9 @@ youtube: [youtube.com/channel/UCGqW9GuMni6KTZkLF2dxu4g](https://www.youtube.com/
 
 
 - [Luís Gabriel Pereira Condados](#luís-gabriel-pereira-condados)
+  - [Projetos](#projetos)
+    - [Projeto: Futrobot - Software da Equipe Poti de Futebol de Robôs](#projeto-futrobot---software-da-equipe-poti-de-futebol-de-robôs)
+    - [Algumas informações prévias:](#algumas-informações-prévias)
   - [Projeto sobre Processamento de Imagens e Visão Computacional](#projeto-sobre-processamento-de-imagens-e-visão-computacional)
     - [Projeto: ...](#projeto-)
     - [Projeto: ...](#projeto--1)
@@ -23,6 +22,26 @@ youtube: [youtube.com/channel/UCGqW9GuMni6KTZkLF2dxu4g](https://www.youtube.com/
     - [Python Virtual Environment](#python-virtual-environment)
     - [VSCode](#vscode)
     - [Lorem o que mesmo que se põe aqui? :p](#lorem-o-que-mesmo-que-se-põe-aqui-p)
+
+
+## Projetos
+
+### [Projeto: Futrobot - Software da Equipe Poti de Futebol de Robôs](https://github.com/potiufrn/Futrobot)
+Software desenvolvido pela Equipe Poti de futebol de robôs do Departamento de Computação e Automação(DCA) da UFRN voltado para o desenvolvimento de pesquisas em robótica e participações em competições de futebol de robôs ([Aqui](https://potiufrn.github.io/) você pode ler mais a respeito de alguns dos trabalhos realizados).
+
+Um pouco sobre as técnologias utilizadas no software:
+* Escrito em **C e C++**
+* Compilação gerenciada por meio de **Makefile** (usando bastante dos recursos "smart" do **make**, ficou quase tão simples quanto usar CMake :p)
+* **Linux**
+* **Qt** para fazer as interfaces gráficas, mas o sistema também roda direto pelo terminal, porém é necessário usar a interface pelo menos para fazer a calibração das cores (o sistema de visão utiliza segmentação por cores)
+* **bluetooth** para comunicação com o host(pc) e os robôs (frota de três robôs)
+* No mais é C++ para fazer: processamento de imagem, visão computacional, IA, controle ...
+* **v4l2** (video for linux 2) para a captura de imagem (usamos na nossa biblioteca/abstração/classe responsável por fazer a captura de imagem)
+
+
+### Algumas informações prévias:
+A manipulação do sistema é feita via Terminal do Linux, tendo a interface gráfica apenas o módulo de calibração.
+
 
 ## Projeto sobre Processamento de Imagens e Visão Computacional
 
