@@ -1,14 +1,16 @@
-# Luís Gabriel Pereira Condados
+<!-- # Luís Gabriel Pereira Condados -->
 
-Canais/plataforma sociais que utilizo:\
+# Contatos e Informações:
 email: [condadoslgpc@gmail.com](condadoslgpc@gmail.com)\
 github: [github.io/gabriellgpc](github.io/gabriellgpc)\
 linkedin: [linkedin.com/in/lgabrielpc](https://www.linkedin.com/in/lgabrielpc)\
 lattes: [lattes.cnpq.br/7552086880914030](http://lattes.cnpq.br/7552086880914030)\
 youtube: [youtube.com/channel/UCGqW9GuMni6KTZkLF2dxu4g](https://www.youtube.com/channel/UCGqW9GuMni6KTZkLF2dxu4g)
 
+# Sumário
 
-- [Luís Gabriel Pereira Condados](#luís-gabriel-pereira-condados)
+- [Contatos e Informações:](#contatos-e-informações)
+- [Sumário](#sumário)
 - [Projetos](#projetos)
   - [Projeto: Futrobot - Software da Equipe Poti de Futebol de Robôs](#projeto-futrobot---software-da-equipe-poti-de-futebol-de-robôs)
     - [Algumas informações prévias:](#algumas-informações-prévias)
@@ -25,6 +27,7 @@ youtube: [youtube.com/channel/UCGqW9GuMni6KTZkLF2dxu4g](https://www.youtube.com/
   - [Vim](#vim)
   - [Template ESP Project](#template-esp-project)
 - [Lorem o que mesmo que se põe aqui?](#lorem-o-que-mesmo-que-se-põe-aqui)
+
 
 # Projetos
 
