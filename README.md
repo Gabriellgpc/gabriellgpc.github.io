@@ -1,6 +1,6 @@
 # Luís Gabriel Pereira Condados
 
-Me chamo Luís Gabriel, tenho mais de 18 anos (dessa forma não preciso ficar atualizando isso todo ano...), sou natural de [Natal/RN](https://pt.wikipedia.org/wiki/Natal_(Rio_Grande_do_Norte)) e me formei em [Engenharia de Computação](https://www.dca.ufrn.br/) em 2020 [UFRN](https://www.ufrn.br/). Pretendo utilizar essa página, principalmente, para mostrar de uma forma um pouco mais organiza alguns dos trabalhos/softwares que já desenvolvi ou estou desenvolvendo, além disso também pretendo deixar/postar alguns tutoriais (a princípio são lembretes para mim mesmo).
+
 
 Canais/plataforma sociais que utilizo:\
 email: condadoslgpc@gmail.com\
@@ -40,7 +40,7 @@ Um pouco sobre as técnologias utilizadas no software:
 * **Qt** para fazer as interfaces gráficas, mas o sistema também roda direto pelo terminal, porém é necessário usar a interface pelo menos para fazer a calibração das cores (o sistema de visão utiliza segmentação por cores)
 * **bluetooth** para comunicação com o host(pc) e os robôs (frota de três robôs)
 * No mais é C++ para fazer: processamento de imagem, visão computacional, IA, controle ...
-* **v4l2** (video for linux 2) para a captura de imagem (usamos na nossa biblioteca/abstração/classe responsável por fazer a captura de imagem)
+* **v4l2** (video for linux 2) utilizada para construir a biblioteca para controle da câmera (configuração e consulta dos parâmetros da câmera) e para captura de imagens em YUYV ou RGBG.
 
 <!-- TODO -->
 <!-- Colocar imagens e vídeos aqui -->
