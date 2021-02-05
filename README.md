@@ -1,12 +1,10 @@
 # Luís Gabriel Pereira Condados
 
-
-
 Canais/plataforma sociais que utilizo:\
-email: condadoslgpc@gmail.com\
+email: [condadoslgpc@gmail.com](condadoslgpc@gmail.com)\
 github: [github.io/gabriellgpc](github.io/gabriellgpc)\
-linkedin: [www.linkedin.com/in/lgabrielpc](https://www.linkedin.com/in/lgabrielpc)\
-lattes: vou colocar daqui a pouco\
+linkedin: [linkedin.com/in/lgabrielpc](https://www.linkedin.com/in/lgabrielpc)\
+lattes: [lattes.cnpq.br/7552086880914030](http://lattes.cnpq.br/7552086880914030)\
 youtube: [youtube.com/channel/UCGqW9GuMni6KTZkLF2dxu4g](https://www.youtube.com/channel/UCGqW9GuMni6KTZkLF2dxu4g)
 
 
@@ -20,13 +18,13 @@ youtube: [youtube.com/channel/UCGqW9GuMni6KTZkLF2dxu4g](https://www.youtube.com/
   - [Workshop: Python Overview](#workshop-python-overview)
   - [Implementação do Algoritmo Raytraicing em C++](#implementação-do-algoritmo-raytraicing-em-c)
   - [Outro projeto ...](#outro-projeto-)
-- [Tutoriais (lembretes para mim mesmo :p)](#tutoriais-lembretes-para-mim-mesmo-p)
+- [Tutoriais/lembretes para mim mesmo](#tutoriaislembretes-para-mim-mesmo)
   - [Linux](#linux)
   - [Python Virtual Environment](#python-virtual-environment)
   - [VSCode](#vscode)
   - [Vim](#vim)
   - [Template ESP Project](#template-esp-project)
-- [Lorem o que mesmo que se põe aqui? :p](#lorem-o-que-mesmo-que-se-põe-aqui-p)
+- [Lorem o que mesmo que se põe aqui?](#lorem-o-que-mesmo-que-se-põe-aqui)
 
 # Projetos
 
@@ -78,12 +76,12 @@ A ideia era mostrar e ensinar o básico (com práticas e demostrações) sobre f
 
 Implementação do algoritmo de renderização raytracing em C++ e usando [openGL](https://www.opengl.org/)(criação da imagem rasterizada) e [OpenMP](https://www.openmp.org/)(para processamento paralelo).
 
-Vou documentar lá ainda e melhorar essa descrição aqui!
-Se liga num vídeozinho massa de demostração dessa implementaçao: [video_massa](https://www.youtube.com/watch?v=QzKdFQ4jB-k)
+Vou documentar lá ainda e melhorar esta descrição...
+Se liga num vídeozinho massa de demostração dessa implementaçao: [video de demostração](https://www.youtube.com/watch?v=QzKdFQ4jB-k).
 
 ## Outro projeto ...
 
-# Tutoriais (lembretes para mim mesmo :p)
+# Tutoriais/lembretes para mim mesmo
 
 ## Linux
 Comandos que me foram/são úteis e que não posso esquecer...
@@ -101,4 +99,4 @@ Já fiz o tutorial algumas vezes mas sempre acabo navegando usando as setas -_-
 
 Tenho até que atualizar lá e colocar um manual de instalação e configuração do ambiente ainda...
 
-# Lorem o que mesmo que se põe aqui? :p
+# Lorem o que mesmo que se põe aqui?
