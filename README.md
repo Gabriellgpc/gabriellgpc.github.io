@@ -19,14 +19,13 @@ youtube: [youtube.com/channel/UCGqW9GuMni6KTZkLF2dxu4g](https://www.youtube.com/
   - [Projeto de Controle Embarcado para Robôs com Acionamento Diferencial e Encoders de Baixa Resolução](#projeto-de-controle-embarcado-para-robôs-com-acionamento-diferencial-e-encoders-de-baixa-resolução)
   - [Workshop: Python Overview](#workshop-python-overview)
   - [Implementação do Algoritmo Raytraicing em C++](#implementação-do-algoritmo-raytraicing-em-c)
-  - [Outro projeto ...](#outro-projeto-)
+  - [Alguns dos Projetos que Estou Organizando para Publicar Aqui](#alguns-dos-projetos-que-estou-organizando-para-publicar-aqui)
 - [Tutoriais/lembretes para mim mesmo](#tutoriaislembretes-para-mim-mesmo)
   - [Linux](#linux)
   - [Python Virtual Environment](#python-virtual-environment)
   - [VSCode](#vscode)
   - [Vim](#vim)
   - [Template ESP Project](#template-esp-project)
-- [Lorem o que mesmo que se põe aqui?](#lorem-o-que-mesmo-que-se-põe-aqui)
 
 
 # Projetos
@@ -82,7 +81,8 @@ Implementação do algoritmo de renderização raytracing em C++ e usando [openG
 Vou documentar lá ainda e melhorar esta descrição...
 Se liga num vídeozinho massa de demostração dessa implementaçao: [video de demostração](https://www.youtube.com/watch?v=QzKdFQ4jB-k).
 
-## Outro projeto ...
+## [Alguns dos Projetos que Estou Organizando para Publicar Aqui](https://github.com/Gabriellgpc/my_personal_projects)
+Vou introduzir cada um deles aqui e criar uma documentação em cada um deles ainda.
 
 # Tutoriais/lembretes para mim mesmo
 
@@ -101,5 +101,3 @@ Já fiz o tutorial algumas vezes mas sempre acabo navegando usando as setas -_-
 ## [Template ESP Project](https://github.com/Gabriellgpc/esp-idf-project)
 
 Tenho até que atualizar lá e colocar um manual de instalação e configuração do ambiente ainda...
-
-# Lorem o que mesmo que se põe aqui?
