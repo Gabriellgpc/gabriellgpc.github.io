@@ -20,7 +20,7 @@ youtube: [youtube.com/channel/UCGqW9GuMni6KTZkLF2dxu4g](https://www.youtube.com/
   - [Workshop: Python Overview](#workshop-python-overview)
   - [Implementação do Algoritmo Raytraicing em C++](#implementação-do-algoritmo-raytraicing-em-c)
   - [Alguns dos Projetos que Estou Organizando para Publicar Aqui](#alguns-dos-projetos-que-estou-organizando-para-publicar-aqui)
-- [Tutoriais/lembretes para mim mesmo](#tutoriaislembretes-para-mim-mesmo)
+- [Tutoriais e Dicas](#tutoriais-e-dicas)
   - [Linux](#linux)
   - [Python Virtual Environment](#python-virtual-environment)
   - [VSCode](#vscode)
@@ -84,7 +84,8 @@ Se liga num vídeozinho massa de demostração dessa implementaçao: [video de d
 ## [Alguns dos Projetos que Estou Organizando para Publicar Aqui](https://github.com/Gabriellgpc/my_personal_projects)
 Vou introduzir cada um deles aqui e criar uma documentação em cada um deles ainda.
 
-# Tutoriais/lembretes para mim mesmo
+# [Tutoriais e Dicas](https://github.com/Gabriellgpc/my_personal_projects/tree/main/tutorial)
+Tutoriais de download, instalação e uso das principais ferramentas/tecnologias que uso para desenvolver
 
 ## Linux
 Comandos que me foram/são úteis e que não posso esquecer...
