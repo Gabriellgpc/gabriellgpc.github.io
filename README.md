@@ -13,11 +13,12 @@ youtube: [youtube.com/channel/UCGqW9GuMni6KTZkLF2dxu4g](https://www.youtube.com/
 - [Sumário](#sumário)
 - [Projetos](#projetos)
   - [Projeto: Futrobot - Software da Equipe Poti de Futebol de Robôs](#projeto-futrobot---software-da-equipe-poti-de-futebol-de-robôs)
-    - [Algumas informações prévias:](#algumas-informações-prévias)
   - [Futrobot-firwmare](#futrobot-firwmare)
   - [Biblioteca BluetoothAction](#biblioteca-bluetoothaction)
   - [Projeto de Controle Embarcado para Robôs com Acionamento Diferencial e Encoders de Baixa Resolução](#projeto-de-controle-embarcado-para-robôs-com-acionamento-diferencial-e-encoders-de-baixa-resolução)
   - [Workshop: Python Overview](#workshop-python-overview)
+  - [Programas Desenvolvidos na Disciplina de Processamento Digital de Imagens](#programas-desenvolvidos-na-disciplina-de-processamento-digital-de-imagens)
+  - [Programas Desenvolvidos na Disciplina de Visão Computacional](#programas-desenvolvidos-na-disciplina-de-visão-computacional)
   - [Implementação do Algoritmo Raytraicing em C++](#implementação-do-algoritmo-raytraicing-em-c)
   - [Alguns dos Projetos que Estou Organizando para Publicar Aqui](#alguns-dos-projetos-que-estou-organizando-para-publicar-aqui)
   - [Filtro de Borramento Adaptativo](#filtro-de-borramento-adaptativo)
@@ -47,7 +48,7 @@ Um pouco sobre as técnologias utilizadas no software:
 <!-- Colocar imagens e vídeos aqui -->
 <!-- Arrumar a documentação do repositório alvo -->
 
-### Algumas informações prévias:
+**Algumas informações prévias:**
 A manipulação do sistema é feita via Terminal do Linux, tendo a interface gráfica apenas o módulo de calibração.
 
 ## [Futrobot-firwmare](https://github.com/potiufrn/Futrobot-firmware)
@@ -61,7 +62,7 @@ Biblioteca criada e mantida pelo laboratório de robótica do DCA. Fiz alguns al
 ## [Projeto de Controle Embarcado para Robôs com Acionamento Diferencial e Encoders de Baixa Resolução](https://github.com/Gabriellgpc/TCC---Controle-Embarcado)
 Projeto em Latex do Meu TCC :). E aqui é a apresentação (também um projeto Latex) que fiz para a defesa: [Slide-Apresentação](https://github.com/Gabriellgpc/Apresentacao_TCC).
 
-Juro que logo vou escrever uma breve documentação aqui explicando do que se trata, mas nesses links você irá encontrar os o pdf da monografia e da apresentação já.
+Logo vou escrever uma breve documentação aqui explicando do que se trata, mas nesses links você já irá encontrar o pdf da monografia.
 
 ## [Workshop: Python Overview](https://github.com/Gabriellgpc/python_workshop_overview)
 Material que criei para ministrar um workshop sobre a linguagem de programação python para o time de rocket design da UFRN ([Potiguar Rocket Design](https://www.youtube.com/channel/UCWEqiELiw2ohrE56GyWJAcg/featured)) em 2020.
@@ -74,6 +75,13 @@ A ideia era mostrar e ensinar o básico (com práticas e demostrações) sobre f
 * Matplotlib
 * Scipy
 * Pandas
+
+## [Programas Desenvolvidos na Disciplina de Processamento Digital de Imagens](https://gabriellgpc.github.io/processamento_digital_de_imagens_UFRN/)
+  O link leva para um blog que fiz para servir como documentação online das atividades que desenvolvi durante a disciplina de Processamento Digital de Imagens do Departamento de Engenharia de Computação e Automação (DCA) da UFRN, a disciplina foi ministrada pelo professor Dr. [Agostinho de Brito Junior](https://agostinhobritojr.github.io/).
+
+
+## [Programas Desenvolvidos na Disciplina de Visão Computacional](https://gabriellgpc.github.io/visao_computacional_DIM0141/)
+  O link leva para um blog que fiz para servir como documentação online das atividades que desenvolvi durante a disciplina de Visão Computacional da UFRN, a disciplina foi ministrada pelo professor Dr.[Rafael Beserra Gomes](https://dimap.ufrn.br/~rafaelbg/index.html).
 
 ## [Implementação do Algoritmo Raytraicing em C++](https://github.com/Gabriellgpc/raytracing)
 
