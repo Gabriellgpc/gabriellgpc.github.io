@@ -20,6 +20,7 @@ youtube: [youtube.com/channel/UCGqW9GuMni6KTZkLF2dxu4g](https://www.youtube.com/
   - [Workshop: Python Overview](#workshop-python-overview)
   - [Implementação do Algoritmo Raytraicing em C++](#implementação-do-algoritmo-raytraicing-em-c)
   - [Alguns dos Projetos que Estou Organizando para Publicar Aqui](#alguns-dos-projetos-que-estou-organizando-para-publicar-aqui)
+  - [Filtro de Borramento Adaptativo](#filtro-de-borramento-adaptativo)
 - [Tutoriais e Dicas](#tutoriais-e-dicas)
   - [Linux](#linux)
   - [Python Virtual Environment](#python-virtual-environment)
@@ -83,6 +84,9 @@ Se liga num vídeozinho massa de demostração dessa implementaçao: [video de d
 
 ## [Alguns dos Projetos que Estou Organizando para Publicar Aqui](https://github.com/Gabriellgpc/my_personal_projects)
 Vou introduzir cada um deles aqui e criar uma documentação em cada um deles ainda.
+
+## [Filtro de Borramento Adaptativo](https://github.com/Gabriellgpc/my_personal_projects/tree/main/computer_vision/adaptive_blurring)
+  O título resumiu bem o que o programa faz, mas sendo um pouco mais específico, o recebe uma imagem e aplica um filtro de borramento que é mais forte em regiões de não borda e um mais suave em regiões de borda.
 
 # [Tutoriais e Dicas](https://github.com/Gabriellgpc/my_personal_projects/tree/main/tutorial)
 Tutoriais de download, instalação e uso das principais ferramentas/tecnologias que uso para desenvolver
