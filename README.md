@@ -22,6 +22,7 @@ youtube: [youtube.com/channel/UCGqW9GuMni6KTZkLF2dxu4g](https://www.youtube.com/
   - [Implementação do Algoritmo Raytraicing em C++](#implementação-do-algoritmo-raytraicing-em-c)
   - [Alguns dos Projetos que Estou Organizando para Publicar Aqui](#alguns-dos-projetos-que-estou-organizando-para-publicar-aqui)
   - [Filtro de Borramento Adaptativo](#filtro-de-borramento-adaptativo)
+  - [Transformada Hough para Identificação de Quadrados](#transformada-hough-para-identificação-de-quadrados)
 - [Tutoriais e Dicas](#tutoriais-e-dicas)
   - [Linux](#linux)
   - [Python Virtual Environment](#python-virtual-environment)
@@ -88,13 +89,20 @@ A ideia era mostrar e ensinar o básico (com práticas e demostrações) sobre f
 Implementação do algoritmo de renderização raytracing em C++ e usando [openGL](https://www.opengl.org/)(criação da imagem rasterizada) e [OpenMP](https://www.openmp.org/)(para processamento paralelo).
 
 Vou documentar lá ainda e melhorar esta descrição...
-Se liga num vídeozinho massa de demostração dessa implementaçao: [video de demostração](https://www.youtube.com/watch?v=QzKdFQ4jB-k).
+Se liga num vídeozinho massa de demostração dessa implementação: [video de demostração](https://www.youtube.com/watch?v=QzKdFQ4jB-k).
 
 ## [Alguns dos Projetos que Estou Organizando para Publicar Aqui](https://github.com/Gabriellgpc/my_personal_projects)
 Vou introduzir cada um deles aqui e criar uma documentação em cada um deles ainda.
 
 ## [Filtro de Borramento Adaptativo](https://github.com/Gabriellgpc/my_personal_projects/tree/main/computer_vision/adaptive_blurring)
   O título resumiu bem o que o programa faz, mas sendo um pouco mais específico, o recebe uma imagem e aplica um filtro de borramento que é mais forte em regiões de não borda e um mais suave em regiões de borda.
+
+## [Transformada Hough para Identificação de Quadrados](https://github.com/Gabriellgpc/my_personal_projects/tree/main/computer_vision/hough_square)
+  A transformada de *Hough* é um método comum para detecção de formas que são facilmente parametrizáveis (formas comuns: linhas e círculos). Geralmente essa transformada é utilizada após a etapa de pré-processamento de detecção de bordas.
+
+  O método consiste em mapear determinados pixeis da imagem numa determinada célula no espaço de parâmetros que definem a figura geométrica. Esse procedimento é repetido para toda a imagem e as células do espaço de parâmetros são incrementadas, servindo assim de indicadores da existência de uma determinada forma.
+
+  Neste trabalho será apresentado uma implementação da transformada *Hough* para a identificação de quadrados pretos em imagens com fundo branco baseado no gradiente. Para isso foi feito a parametrização de um quadrado com a informação do centro do quadrado, tamanho do lado e orientação com relação ao eixo horizontal ($x_c, y_c, l, \theta$), por isso o espaço de configuração terá dimensão $4$. Para fazer o mapeamento entre o espaço de imagem e o de parâmetros foi utilizado a informação do gradiente da imagem e um ponto de borda, para com isso obter-se as normais do quadrado e com isso estimar os quatro parâmetros. Após o mapeamento/acumulo dos indicadores é feito uma etapa de filtragem dos quadrados, para melhorar a precisão da detecção.
 
 # [Tutoriais e Dicas](https://github.com/Gabriellgpc/my_personal_projects/tree/main/tutorial)
 Tutoriais de download, instalação e uso das principais ferramentas/tecnologias que uso para desenvolver
