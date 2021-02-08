@@ -21,10 +21,12 @@ kaggle: [kaggle/condados](https://www.kaggle.com/condados)
   - [Occupancy grid on the CoppeliaSim (VREP)](#occupancy-grid-on-the-coppeliasim-vrep)
   - [Self Driving Car on Carla Simulator](#self-driving-car-on-carla-simulator)
   - [Path Follower, Position Controller and Trajectory Controller (Kinematic Controllers). Simulation on CoppeliaSim](#path-follower-position-controller-and-trajectory-controller-kinematic-controllers-simulation-on-coppeliasim)
+  - [Identificação de Colisão em Espaço de Configuração](#identificação-de-colisão-em-espaço-de-configuração)
 - [Embedded Systems](#embedded-systems)
   - [Futrobot-firwmare](#futrobot-firwmare)
   - [Projeto de Controle Embarcado para Robôs com Acionamento Diferencial e Encoders de Baixa Resolução](#projeto-de-controle-embarcado-para-robôs-com-acionamento-diferencial-e-encoders-de-baixa-resolução)
 - [Computer Vision and Image Digital Processing](#computer-vision-and-image-digital-processing)
+  - [Projetos básicos de Visão Computacional com OpenCV e Python](#projetos-básicos-de-visão-computacional-com-opencv-e-python)
   - [Programas Desenvolvidos na Disciplina de Processamento Digital de Imagens](#programas-desenvolvidos-na-disciplina-de-processamento-digital-de-imagens)
   - [Programas Desenvolvidos na Disciplina de Visão Computacional](#programas-desenvolvidos-na-disciplina-de-visão-computacional)
 - [Filtro de Borramento Adaptativo](#filtro-de-borramento-adaptativo)
@@ -71,11 +73,12 @@ Um pouco sobre as técnologias utilizadas no software:
 * No mais é C++ para fazer: processamento de imagem, visão computacional, IA, controle ...
 * **v4l2** (video for linux 2) utilizada para construir a biblioteca para controle da câmera (configuração e consulta dos parâmetros da câmera) e para captura de imagens em YUYV ou RGBG.
 
-<!-- TODO -->
-<!-- Colocar imagens e vídeos aqui -->
-<!-- Arrumar a documentação do repositório alvo -->
 
-![](img/demo_calibrador.png)
+<img src="img/demo_robos_poti.png" alt="robos" style="height:320px;"/>
+
+<img src="img/demo_calibrador.png" alt="software" style="width:320px;"/>
+
+<!-- ![](img/demo_calibrador.png) -->
 
 **Algumas informações prévias:**
   A manipulação do sistema é feita via Terminal do Linux, tendo a interface gráfica apenas o módulo de calibração.
@@ -109,15 +112,22 @@ Implementação em C++ de controladores cinemáticos clássicos (from scratch). 
 - Controle Estabilizando / Posição
 
 ![](img/demo_trajectory_follower.png)
-  
+
+## [Identificação de Colisão em Espaço de Configuração](https://www.youtube.com/watch?v=NvBI5x8xyeY&t=896s&ab_channel=Lu%C3%ADsGabriel)
+Simulação usando CoppeliaSim e programa em C++ para identificação de colisão em espaço de configuração (from scratch!).
+
+**Obs.:** Quando fiz o vídeo eu ainda estava aprendendo sobre o conteúdo, então acabei não explicando muito bem alguns pontos, mas a ideia geral está correta. Source code [here](https://github.com/Gabriellgpc/sistemas_roboticos_autonomos/tree/master/program/p2m1). 
+
+![](img/demo_colition_detection.png)
+
 # Embedded Systems
 
 ## [Futrobot-firwmare](https://github.com/potiufrn/Futrobot-firmware)
-  Software embarcado (firmware) para os robôs da Equipe Poti de futebol de robôs 2020.
+Software embarcado (firmware) para os robôs da Equipe Poti de futebol de robôs 2020.
 
-  Estou organizando ainda essa página e a documentação, logo mais deixarei uma descrição melhor do projeto aqui e uma documentação lá :)
+Estou organizando ainda essa página e a documentação, logo mais deixarei uma descrição melhor do projeto aqui e uma documentação lá :)
 
-## [Projeto de Controle Embarcado para Robôs com Acionamento Diferencial e Encoders de Baixa Resolução](https://github.com/Gabriellgpc/TCC---Controle-Embarcado)
+## [Projeto de Controle Embarcado para Robôs com Acionamento Diferencial e Encoders de Baixa Resolução](https://github.com/Gabriellgpc/TCC---Controle-Embarcado/blob/main/TCC_LGabriel.pdf)
 
 Projeto em Latex do Meu TCC no link do título do projeto :). E aqui é a apresentação (também um projeto Latex) que fiz para a defesa: [Slide Apresentação](https://github.com/Gabriellgpc/Apresentacao_TCC).
 
@@ -126,7 +136,12 @@ Algumas das tecnologias utilizadas:
 - **Filtro de Kalman**: Foi utilizado como estimador de estado (faz uso do modelo do sistema/motor, sinal de entrada / pwm e leitura do sensor para fazer a melhor estimativa da velocidade de rotação do motor);
 - **Linguagem de Programação C e ESP-SDK**: Programei em C usando o kit de desenvolvendo (libs) da desenvolvedora do mesmo (ESP-SDK).
 
+![](img/demo_resultado_tcc.png)
+
 # Computer Vision and Image Digital Processing
+
+## [Projetos básicos de Visão Computacional com OpenCV e Python](https://github.com/Gabriellgpc/my_personal_projects/tree/main/computer_vision)
+  Não sei se vale a pena documentar para postar aqui ainda... Provavelmente vou deixar eles um pouco mais interessantes e fazer as versões em C++ antes de colocar um por um aqui.
 
 ## [Programas Desenvolvidos na Disciplina de Processamento Digital de Imagens](https://gabriellgpc.github.io/processamento_digital_de_imagens_UFRN/)
   O link leva para um blog que fiz para servir como documentação online das atividades que desenvolvi durante a disciplina de Processamento Digital de Imagens do Departamento de Engenharia de Computação e Automação (DCA) da UFRN, a disciplina foi ministrada pelo professor Dr. [Agostinho de Brito Junior](https://agostinhobritojr.github.io/).
