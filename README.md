@@ -8,6 +8,7 @@ Lattes: [lattes.cnpq.br/7552086880914030](http://lattes.cnpq.br/7552086880914030
 Youtube: [youtube.com/channel/UCGqW9GuMni6KTZkLF2dxu4g](https://www.youtube.com/channel/UCGqW9GuMni6KTZkLF2dxu4g)\
 Kaggle: [kaggle/condados](https://www.kaggle.com/condados)
 
+-------
 - [Contatos e Informações:](#contatos-e-informações)
 - [Machine Learning](#machine-learning)
   - [Digit Recognizer](#digit-recognizer)
@@ -26,7 +27,7 @@ Kaggle: [kaggle/condados](https://www.kaggle.com/condados)
   - [Projetos básicos de Visão Computacional com OpenCV e Python](#projetos-básicos-de-visão-computacional-com-opencv-e-python)
   - [Programas Desenvolvidos na Disciplina de Processamento Digital de Imagens](#programas-desenvolvidos-na-disciplina-de-processamento-digital-de-imagens)
   - [Programas Desenvolvidos na Disciplina de Visão Computacional](#programas-desenvolvidos-na-disciplina-de-visão-computacional)
-- [Filtro de Borramento Adaptativo](#filtro-de-borramento-adaptativo)
+  - [Filtro de Borramento Adaptativo](#filtro-de-borramento-adaptativo)
   - [Transformada Hough para Identificação de Quadrados](#transformada-hough-para-identificação-de-quadrados)
 - [Graphics Computing](#graphics-computing)
   - [Implementação do Algoritmo Raytracer em C++](#implementação-do-algoritmo-raytracer-em-c)
@@ -44,6 +45,7 @@ Kaggle: [kaggle/condados](https://www.kaggle.com/condados)
 
 Ainda estou organizando essa página, vou deixar essa misturada de inglês com português por hora ...
 
+-------
 # Machine Learning
 ## [Digit Recognizer](https://www.kaggle.com/condados/first-project-mnist-digit-nn)
   "MNIST ("Modified National Institute of Standards and Technology") is the de facto “hello world” dataset of computer vision. Since its release in 1999, this classic dataset of handwritten images has served as the basis for benchmarking classification algorithms. As new machine learning techniques emerge, MNIST remains a reliable resource for researchers and learners alike.
@@ -117,6 +119,7 @@ Simulação usando CoppeliaSim e programa em C++ para identificação de colisã
 
 ![](img/demo_colition_detection.png)
 
+
 # Embedded Systems
 
 ## [Futrobot-firwmare](https://github.com/potiufrn/Futrobot-firmware)
@@ -147,7 +150,7 @@ Algumas das tecnologias utilizadas:
 ## [Programas Desenvolvidos na Disciplina de Visão Computacional](https://gabriellgpc.github.io/visao_computacional_DIM0141/)
   O link leva para um blog que fiz para servir como documentação online das atividades que desenvolvi durante a disciplina de Visão Computacional da UFRN, a disciplina foi ministrada pelo professor Dr.[Rafael Beserra Gomes](https://dimap.ufrn.br/~rafaelbg/index.html).
 
-# [Filtro de Borramento Adaptativo](https://github.com/Gabriellgpc/my_personal_projects/tree/main/computer_vision/adaptive_blurring)
+## [Filtro de Borramento Adaptativo](https://github.com/Gabriellgpc/my_personal_projects/tree/main/computer_vision/adaptive_blurring)
   O título resumiu bem o que o programa faz, mas sendo um pouco mais específico, o recebe uma imagem e aplica um filtro de borramento que é mais forte em regiões de não borda e um mais suave em regiões de borda.
 
   ![](img/demo_filtro_adaptativo.png)
