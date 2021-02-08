@@ -59,72 +59,72 @@ Ainda estou organizando essa página, vou deixar essa misturada de inglês com p
   ![](img/demo_dog_vs_cats_predics.png)
 
 # Robotics
-  ## [Projeto: Futrobot - Software da Equipe Poti de Futebol de Robôs](https://github.com/potiufrn/Futrobot)
-  Software desenvolvido pela Equipe Poti de futebol de robôs do Departamento de Computação e Automação(DCA) da UFRN voltado para o desenvolvimento de pesquisas em robótica e participações em competições de futebol de robôs ([Aqui](https://potiufrn.github.io/) você pode ler mais a respeito de alguns dos trabalhos realizados).
+## [Projeto: Futrobot - Software da Equipe Poti de Futebol de Robôs](https://github.com/potiufrn/Futrobot)
+Software desenvolvido pela Equipe Poti de futebol de robôs do Departamento de Computação e Automação(DCA) da UFRN voltado para o desenvolvimento de pesquisas em robótica e participações em competições de futebol de robôs ([Aqui](https://potiufrn.github.io/) você pode ler mais a respeito de alguns dos trabalhos realizados).
 
-  Um pouco sobre as técnologias utilizadas no software:
-  * Escrito em **C e C++**
-  * Compilação gerenciada por meio de **Makefile** (usando bastante dos recursos "smart" do **make**, ficou quase tão simples quanto usar CMake :p)
-  * **Linux**
-  * **Qt** para fazer as interfaces gráficas, mas o sistema também roda direto pelo terminal, porém é necessário usar a interface pelo menos para fazer a calibração das cores (o sistema de visão utiliza segmentação por cores)
-  * **bluetooth** para comunicação com o host(pc) e os robôs (frota de três robôs)
-  * No mais é C++ para fazer: processamento de imagem, visão computacional, IA, controle ...
-  * **v4l2** (video for linux 2) utilizada para construir a biblioteca para controle da câmera (configuração e consulta dos parâmetros da câmera) e para captura de imagens em YUYV ou RGBG.
+Um pouco sobre as técnologias utilizadas no software:
+* Escrito em **C e C++**
+* Compilação gerenciada por meio de **Makefile** (usando bastante dos recursos "smart" do **make**, ficou quase tão simples quanto usar CMake :p)
+* **Linux**
+* **Qt** para fazer as interfaces gráficas, mas o sistema também roda direto pelo terminal, porém é necessário usar a interface pelo menos para fazer a calibração das cores (o sistema de visão utiliza segmentação por cores)
+* **bluetooth** para comunicação com o host(pc) e os robôs (frota de três robôs)
+* No mais é C++ para fazer: processamento de imagem, visão computacional, IA, controle ...
+* **v4l2** (video for linux 2) utilizada para construir a biblioteca para controle da câmera (configuração e consulta dos parâmetros da câmera) e para captura de imagens em YUYV ou RGBG.
 
-  <!-- TODO -->
-  <!-- Colocar imagens e vídeos aqui -->
-  <!-- Arrumar a documentação do repositório alvo -->
+<!-- TODO -->
+<!-- Colocar imagens e vídeos aqui -->
+<!-- Arrumar a documentação do repositório alvo -->
 
-  ![](img/demo_calibrador.png)
+![](img/demo_calibrador.png)
 
-  **Algumas informações prévias:**
-    A manipulação do sistema é feita via Terminal do Linux, tendo a interface gráfica apenas o módulo de calibração.
+**Algumas informações prévias:**
+  A manipulação do sistema é feita via Terminal do Linux, tendo a interface gráfica apenas o módulo de calibração.
 
-  ## [Path Planning Using Potential Field Algorithm and Occupancy Grid on the CoppeliaSim (VREP)](https://www.youtube.com/watch?v=_S35ZPSqSBo&ab_channel=Lu%C3%ADsGabriel)
-  Simulação usando CoppeliaSim (antigo VREP), projeto em C++ (from scratch) de um planejador de caminhos baseado em campos potenciais. Source Code [here](https://github.com/Gabriellgpc/sistemas_roboticos_autonomos/tree/master/program/p3m3). 
-  **Obs.:** Deixarei um relatório em PDF explicando o funcionamento geral do sistema.
+## [Path Planning Using Potential Field Algorithm and Occupancy Grid on the CoppeliaSim (VREP)](https://www.youtube.com/watch?v=_S35ZPSqSBo&ab_channel=Lu%C3%ADsGabriel)
+Simulação usando CoppeliaSim (antigo VREP), projeto em C++ (from scratch) de um planejador de caminhos baseado em campos potenciais. Source Code [here](https://github.com/Gabriellgpc/sistemas_roboticos_autonomos/tree/master/program/p3m3). 
+**Obs.:** Deixarei um relatório em PDF explicando o funcionamento geral do sistema.
 
-  ![](img/demo_path_planning_potential_field.png)
+![](img/demo_path_planning_potential_field.png)
 
-  ## [Occupancy grid on the CoppeliaSim (VREP)](https://www.youtube.com/watch?v=5lMkQWt_dUw&ab_channel=Lu%C3%ADsGabriel)
-  Projeto em C++ de construção de uma grade de ocupação probabilística (from scratch). Source code [here](https://github.com/Gabriellgpc/sistemas_roboticos_autonomos/tree/master/program/p3m2).
-  **Obs.:** Deixarei um relatório em PDF explicando o funcionamento geral do sistema.
+## [Occupancy grid on the CoppeliaSim (VREP)](https://www.youtube.com/watch?v=5lMkQWt_dUw&ab_channel=Lu%C3%ADsGabriel)
+Projeto em C++ de construção de uma grade de ocupação probabilística (from scratch). Source code [here](https://github.com/Gabriellgpc/sistemas_roboticos_autonomos/tree/master/program/p3m2).
+**Obs.:** Deixarei um relatório em PDF explicando o funcionamento geral do sistema.
 
-  ![](img/demo_building_an_occupancy_grid.png)
+![](img/demo_building_an_occupancy_grid.png)
 
-  ## [Self Driving Car on Carla Simulator](https://www.youtube.com/watch?v=oaez0aPVfI4&ab_channel=Lu%C3%ADsGabriel)
-  I lost my source code :'(, I will do a new version afterward. I made that project during my Self Driving Cars specialization from [Coursera](https://www.coursera.org/specializations/self-driving-cars).
+## [Self Driving Car on Carla Simulator](https://www.youtube.com/watch?v=oaez0aPVfI4&ab_channel=Lu%C3%ADsGabriel)
+I lost my source code :'(, I will do a new version afterward. I made that project during my Self Driving Cars specialization from [Coursera](https://www.coursera.org/specializations/self-driving-cars).
 
-  **Demos**:
-  - [Lateral and Horizontal Controller 1](https://www.youtube.com/watch?v=Xr--q2T92P4&ab_channel=Lu%C3%ADsGabriel)
-   - [Lateral and Horizontal Controller 2](https://www.youtube.com/watch?v=oaez0aPVfI4&ab_channel=Lu%C3%ADsGabriel)
-  - [My Final Self Driving Car System](https://www.youtube.com/watch?v=axL8ux_x6Vs&t=187s&ab_channel=Lu%C3%ADsGabriel)
-  
-  ![](img/demo_self_driving_car.png)
+**Demos**:
+- [Lateral and Horizontal Controller 1](https://www.youtube.com/watch?v=Xr--q2T92P4&ab_channel=Lu%C3%ADsGabriel)
+  - [Lateral and Horizontal Controller 2](https://www.youtube.com/watch?v=oaez0aPVfI4&ab_channel=Lu%C3%ADsGabriel)
+- [My Final Self Driving Car System](https://www.youtube.com/watch?v=axL8ux_x6Vs&t=187s&ab_channel=Lu%C3%ADsGabriel)
 
-  ## [Path Follower, Position Controller and Trajectory Controller (Kinematic Controllers). Simulation on CoppeliaSim](https://www.youtube.com/watch?v=KIsikoNiXtg&ab_channel=Lu%C3%ADsGabriel)
-  Implementação em C++ de controladores cinemáticos clássicos (from scratch). Source code [here](https://github.com/Gabriellgpc/sistemas_roboticos_autonomos/tree/master/program/p1m3)
-  - Seguidor de Caminho
-  - Seguidor de Trajetória
-  - Controle Estabilizando / Posição
+![](img/demo_self_driving_car.png)
 
-  ![](img/demo_trajectory_follower.png)
+## [Path Follower, Position Controller and Trajectory Controller (Kinematic Controllers). Simulation on CoppeliaSim](https://www.youtube.com/watch?v=KIsikoNiXtg&ab_channel=Lu%C3%ADsGabriel)
+Implementação em C++ de controladores cinemáticos clássicos (from scratch). Source code [here](https://github.com/Gabriellgpc/sistemas_roboticos_autonomos/tree/master/program/p1m3)
+- Seguidor de Caminho
+- Seguidor de Trajetória
+- Controle Estabilizando / Posição
+
+![](img/demo_trajectory_follower.png)
   
 # Embedded Systems
 
-  ## [Futrobot-firwmare](https://github.com/potiufrn/Futrobot-firmware)
-    Software embarcado (firmware) para os robôs da Equipe Poti de futebol de robôs 2020.
+## [Futrobot-firwmare](https://github.com/potiufrn/Futrobot-firmware)
+  Software embarcado (firmware) para os robôs da Equipe Poti de futebol de robôs 2020.
 
-    Estou organizando ainda essa página e a documentação, logo mais deixarei uma descrição melhor do projeto aqui e uma documentação lá :)
+  Estou organizando ainda essa página e a documentação, logo mais deixarei uma descrição melhor do projeto aqui e uma documentação lá :)
 
-  ## [Projeto de Controle Embarcado para Robôs com Acionamento Diferencial e Encoders de Baixa Resolução](https://github.com/Gabriellgpc/TCC---Controle-Embarcado)
+## [Projeto de Controle Embarcado para Robôs com Acionamento Diferencial e Encoders de Baixa Resolução](https://github.com/Gabriellgpc/TCC---Controle-Embarcado)
 
-  Projeto em Latex do Meu TCC no link do título do projeto :). E aqui é a apresentação (também um projeto Latex) que fiz para a defesa: [Slide Apresentação](https://github.com/Gabriellgpc/Apresentacao_TCC).
+Projeto em Latex do Meu TCC no link do título do projeto :). E aqui é a apresentação (também um projeto Latex) que fiz para a defesa: [Slide Apresentação](https://github.com/Gabriellgpc/Apresentacao_TCC).
 
-  Implementação de um esquema de controle do tipo feedforward/backward para controle das velocidades angulares dos motores de um mini robô com acionamento diferencial (acionamentos independentes/um motor por roda) com sensores (Encoders magnéticos) de baixa resolução. \
-  Algumas das tecnologias utilizadas:
-  - **Filtro de Kalman**: Foi utilizado como estimador de estado (faz uso do modelo do sistema/motor, sinal de entrada / pwm e leitura do sensor para fazer a melhor estimativa da velocidade de rotação do motor);
-  - **Linguagem de Programação C e ESP-SDK**: Programei em C usando o kit de desenvolvendo (libs) da desenvolvedora do mesmo (ESP-SDK).
+Implementação de um esquema de controle do tipo feedforward/backward para controle das velocidades angulares dos motores de um mini robô com acionamento diferencial (acionamentos independentes/um motor por roda) com sensores (Encoders magnéticos) de baixa resolução. \
+Algumas das tecnologias utilizadas:
+- **Filtro de Kalman**: Foi utilizado como estimador de estado (faz uso do modelo do sistema/motor, sinal de entrada / pwm e leitura do sensor para fazer a melhor estimativa da velocidade de rotação do motor);
+- **Linguagem de Programação C e ESP-SDK**: Programei em C usando o kit de desenvolvendo (libs) da desenvolvedora do mesmo (ESP-SDK).
 
 # Computer Vision and Image Digital Processing
 
@@ -150,30 +150,30 @@ Ainda estou organizando essa página, vou deixar essa misturada de inglês com p
   ![](img/demo_hough4squares.png)
 
 # Graphics Computing
-  ## [Implementação do Algoritmo Raytracer em C++](https://github.com/Gabriellgpc/raytracing)
-  Implementação do algoritmo de renderização raytracing em C++ e usando [openGL](https://www.opengl.org/)(criação da imagem rasterizada) e [OpenMP](https://www.openmp.org/)(para processamento paralelo).
+## [Implementação do Algoritmo Raytracer em C++](https://github.com/Gabriellgpc/raytracing)
+Implementação do algoritmo de renderização raytracing em C++ e usando [openGL](https://www.opengl.org/)(criação da imagem rasterizada) e [OpenMP](https://www.openmp.org/)(para processamento paralelo).
 
-  Vou documentar lá ainda e melhorar esta descrição...
-  Se liga num vídeozinho massa de demostração dessa implementação: [video de demostração](https://www.youtube.com/watch?v=QzKdFQ4jB-k).
+Vou documentar lá ainda e melhorar esta descrição...
+Se liga num vídeozinho massa de demostração dessa implementação: [video de demostração](https://www.youtube.com/watch?v=QzKdFQ4jB-k).
 
-  ![](img/demo_raytracer.png)
+![](img/demo_raytracer.png)
 
 # Communication Systems
-  # [Biblioteca BluetoothAction](https://github.com/potiufrn/bluetoothAction)
-  Biblioteca criada e mantida pelo laboratório de robótica do DCA. Fiz alguns algumas modificações para torna-la mais genérica (foi criada para ser usada no [Futrobot](##[Futrobot-firwmare](https://github.com/potiufrn/Futrobot-firmware)))
+# [Biblioteca BluetoothAction](https://github.com/potiufrn/bluetoothAction)
+Biblioteca criada e mantida pelo laboratório de robótica do DCA. Fiz alguns algumas modificações para torna-la mais genérica (foi criada para ser usada no [Futrobot](##[Futrobot-firwmare](https://github.com/potiufrn/Futrobot-firmware)))
 
 # Workshops
-  ## [Workshop: Python Overview](https://github.com/Gabriellgpc/python_workshop_overview)
-  Material que criei para ministrar um workshop sobre a linguagem de programação python para o time de rocket design da UFRN ([Potiguar Rocket Design](https://www.youtube.com/channel/UCWEqiELiw2ohrE56GyWJAcg/featured)) em 2020.
+## [Workshop: Python Overview](https://github.com/Gabriellgpc/python_workshop_overview)
+Material que criei para ministrar um workshop sobre a linguagem de programação python para o time de rocket design da UFRN ([Potiguar Rocket Design](https://www.youtube.com/channel/UCWEqiELiw2ohrE56GyWJAcg/featured)) em 2020.
 
-  A ideia era mostrar e ensinar o básico (com práticas e demostrações) sobre ferramentas úteis para a realidade da grande maioria dos integrantes do time (estudantes de engenharia mecânica em sua maioria) como:
-  * Ambiente Jupyter notebook / Colab
-  * Python básico
-  * Programação orientada a objetos com python
-  * Numpy
-  * Matplotlib
-  * Scipy
-  * Pandas
+A ideia era mostrar e ensinar o básico (com práticas e demostrações) sobre ferramentas úteis para a realidade da grande maioria dos integrantes do time (estudantes de engenharia mecânica em sua maioria) como:
+* Ambiente Jupyter notebook / Colab
+* Python básico
+* Programação orientada a objetos com python
+* Numpy
+* Matplotlib
+* Scipy
+* Pandas
 
 # [Alguns dos Projetos que Estou Organizando para Publicar Aqui](https://github.com/Gabriellgpc/my_personal_projects)
   Vou introduzir cada um deles aqui e criar uma documentação em cada um deles ainda.
