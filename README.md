@@ -24,6 +24,7 @@ kaggle: [kaggle/condados](https://www.kaggle.com/condados)
 - [Filtro de Borramento Adaptativo](#filtro-de-borramento-adaptativo)
 - [Transformada Hough para Identificação de Quadrados](#transformada-hough-para-identificação-de-quadrados)
 - [Digit Recognizer](#digit-recognizer)
+- [classification challenge - Dogs vs. Cats](#classification-challenge---dogs-vs-cats)
 - [Tutoriais e Dicas](#tutoriais-e-dicas)
   - [Linux](#linux)
   - [Python Virtual Environment](#python-virtual-environment)
@@ -107,6 +108,9 @@ Vou introduzir cada um deles aqui e criar uma documentação em cada um deles ai
   "MNIST ("Modified National Institute of Standards and Technology") is the de facto “hello world” dataset of computer vision. Since its release in 1999, this classic dataset of handwritten images has served as the basis for benchmarking classification algorithms. As new machine learning techniques emerge, MNIST remains a reliable resource for researchers and learners alike.
 
   In this competition, your goal is to correctly identify digits from a dataset of tens of thousands of handwritten images. We’ve curated a set of tutorial-style kernels which cover everything from regression to neural networks. We encourage you to experiment with different algorithms to learn first-hand what works well and how techniques compare."[Kaggle](https://www.kaggle.com/c/digit-recognizer).
+
+# [classification challenge - Dogs vs. Cats](https://www.kaggle.com/condados/my-cnn-for-dog-vs-cats)
+  In this competition, I wrote an algorithm to classify whether images contain either a dog or a cat. The training archive contains 25,000 images of dogs and cats (1 = dog, 0 = cat).[Dogs vs Cats Competition](https://www.kaggle.com/c/dogs-vs-cats/overview)
 
 # [Tutoriais e Dicas](https://github.com/Gabriellgpc/my_personal_projects/tree/main/tutorial)
 Tutoriais de download, instalação e uso das principais ferramentas/tecnologias que uso para desenvolver
