@@ -5,7 +5,7 @@ email: [condadoslgpc@gmail.com](condadoslgpc@gmail.com)\
 github: [github.io/gabriellgpc](github.io/gabriellgpc)\
 linkedin: [linkedin.com/in/lgabrielpc](https://www.linkedin.com/in/lgabrielpc)\
 lattes: [lattes.cnpq.br/7552086880914030](http://lattes.cnpq.br/7552086880914030)\
-youtube: [youtube.com/channel/UCGqW9GuMni6KTZkLF2dxu4g](https://www.youtube.com/channel/UCGqW9GuMni6KTZkLF2dxu4g)
+youtube: [youtube.com/channel/UCGqW9GuMni6KTZkLF2dxu4g](https://www.youtube.com/channel/UCGqW9GuMni6KTZkLF2dxu4g)\
 kaggle: [kaggle/condados](https://www.kaggle.com/condados)
 
 # Sumário
