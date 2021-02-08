@@ -1,17 +1,14 @@
 <!-- # Luís Gabriel Pereira Condados -->
 
 # Contatos e Informações:
-email: [condadoslgpc@gmail.com](condadoslgpc@gmail.com)\
-github: [github.io/gabriellgpc](github.io/gabriellgpc)\
-linkedin: [linkedin.com/in/lgabrielpc](https://www.linkedin.com/in/lgabrielpc)\
-lattes: [lattes.cnpq.br/7552086880914030](http://lattes.cnpq.br/7552086880914030)\
-youtube: [youtube.com/channel/UCGqW9GuMni6KTZkLF2dxu4g](https://www.youtube.com/channel/UCGqW9GuMni6KTZkLF2dxu4g)\
-kaggle: [kaggle/condados](https://www.kaggle.com/condados)
-
-# Sumário
+Email: [condadoslgpc@gmail.com](condadoslgpc@gmail.com)\
+Github: [github.io/gabriellgpc](github.io/gabriellgpc)\
+Linkedin: [linkedin.com/in/lgabrielpc](https://www.linkedin.com/in/lgabrielpc)\
+Lattes: [lattes.cnpq.br/7552086880914030](http://lattes.cnpq.br/7552086880914030)\
+Youtube: [youtube.com/channel/UCGqW9GuMni6KTZkLF2dxu4g](https://www.youtube.com/channel/UCGqW9GuMni6KTZkLF2dxu4g)\
+Kaggle: [kaggle/condados](https://www.kaggle.com/condados)
 
 - [Contatos e Informações:](#contatos-e-informações)
-- [Sumário](#sumário)
 - [Machine Learning](#machine-learning)
   - [Digit Recognizer](#digit-recognizer)
   - [classification challenge - Dogs vs. Cats](#classification-challenge---dogs-vs-cats)
