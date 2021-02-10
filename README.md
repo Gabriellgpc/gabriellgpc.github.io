@@ -13,6 +13,7 @@ Kaggle: [kaggle/condados](https://www.kaggle.com/condados)
 - [Machine Learning](#machine-learning)
   - [Digit Recognizer](#digit-recognizer)
   - [classification challenge - Dogs vs. Cats](#classification-challenge---dogs-vs-cats)
+  - [Filtragem Convolucional 2D](#filtragem-convolucional-2d)
 - [Robotics](#robotics)
   - [Projeto: Futrobot - Software da Equipe Poti de Futebol de Robôs](#projeto-futrobot---software-da-equipe-poti-de-futebol-de-robôs)
   - [Path Planning Using Potential Field Algorithm and Occupancy Grid on the CoppeliaSim (VREP)](#path-planning-using-potential-field-algorithm-and-occupancy-grid-on-the-coppeliasim-vrep)
@@ -58,6 +59,24 @@ Ainda estou organizando essa página, vou deixar essa misturada de inglês com p
   In this competition, I wrote an algorithm to classify whether images contain either a dog or a cat. The training archive contains 25,000 images of dogs and cats (1 = dog, 0 = cat).[Dogs vs Cats Competition](https://www.kaggle.com/c/dogs-vs-cats/overview)
 
   ![](img/demo_dog_vs_cats_predics.png)
+
+## [Filtragem Convolucional 2D](https://github.com/Gabriellgpc/my_personal_projects/tree/main/computer_vision/conv_from_scratch)
+  Implementação em C++ da operação de convolução com parâmetros adicionais (stride e padding).
+  Fiz umas abstração simples de uma classe Imagem, apenas para trabalhar com imagens em tons de cinza (poderia ter feito colorido também, sem grandes dificuldades a mais) e para carregar e salvar imagens da memória eu decidi trabalhar com o padrão PGM ([Documento](https://en.wikipedia.org/wiki/Netpbm#File_formats) sobre o projeto **Netpbm** e os formatos de imagens definidos por eles.) que é o mais simples para implementar, embora ocupe muito espaço de memoria.
+  
+  A função que implementa a convolução **conv2D** recebe como parâmetros:
+- Uma Imagem
+- kernel/máscara(prefiro o termo kernel): um vetor de float
+- f: indicando a dimensão do kernel
+- s: stride, "saltos que o kernel dará durante a convolução" o padrão é 1
+- p: padding, quanto que a imagem original vai ser expandida antes de operar
+- same: boolean que se passado como true a imagem resultante será da mesma dimensão da imagem de entrada, caso seja false (padrão) as dimensões da imagem de saída será:
+
+$width_{out} = floor(\frac{width_{in} + 2*p - f}{s} + 1)$
+
+$height_{out} = floor(\frac{height_{in} + 2*p - f}{s} + 1)$
+
+  ![](img/conv.gif)
 
 # Robotics
 ## [Projeto: Futrobot - Software da Equipe Poti de Futebol de Robôs](https://github.com/potiufrn/Futrobot)
