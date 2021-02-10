@@ -13,7 +13,6 @@ Kaggle: [kaggle/condados](https://www.kaggle.com/condados)
 - [Machine Learning](#machine-learning)
   - [Digit Recognizer](#digit-recognizer)
   - [classification challenge - Dogs vs. Cats](#classification-challenge---dogs-vs-cats)
-  - [Filtragem Convolucional 2D](#filtragem-convolucional-2d)
 - [Robotics](#robotics)
   - [Projeto: Futrobot - Software da Equipe Poti de Futebol de Robôs](#projeto-futrobot---software-da-equipe-poti-de-futebol-de-robôs)
   - [Path Planning Using Potential Field Algorithm and Occupancy Grid on the CoppeliaSim (VREP)](#path-planning-using-potential-field-algorithm-and-occupancy-grid-on-the-coppeliasim-vrep)
@@ -25,6 +24,7 @@ Kaggle: [kaggle/condados](https://www.kaggle.com/condados)
   - [Futrobot-firwmare](#futrobot-firwmare)
   - [Projeto de Controle Embarcado para Robôs com Acionamento Diferencial e Encoders de Baixa Resolução](#projeto-de-controle-embarcado-para-robôs-com-acionamento-diferencial-e-encoders-de-baixa-resolução)
 - [Computer Vision and Image Digital Processing](#computer-vision-and-image-digital-processing)
+  - [Filtragem Convolucional 2D](#filtragem-convolucional-2d)
   - [Projetos básicos de Visão Computacional com OpenCV e Python](#projetos-básicos-de-visão-computacional-com-opencv-e-python)
   - [Programas Desenvolvidos na Disciplina de Processamento Digital de Imagens](#programas-desenvolvidos-na-disciplina-de-processamento-digital-de-imagens)
   - [Programas Desenvolvidos na Disciplina de Visão Computacional](#programas-desenvolvidos-na-disciplina-de-visão-computacional)
@@ -60,23 +60,6 @@ Ainda estou organizando essa página, vou deixar essa misturada de inglês com p
 
   ![](img/demo_dog_vs_cats_predics.png)
 
-## [Filtragem Convolucional 2D](https://github.com/Gabriellgpc/my_personal_projects/tree/main/computer_vision/conv_from_scratch)
-  Implementação em C++ da operação de convolução com parâmetros adicionais (stride e padding).
-  Fiz umas abstração simples de uma classe Imagem, apenas para trabalhar com imagens em tons de cinza (poderia ter feito colorido também, sem grandes dificuldades a mais) e para carregar e salvar imagens da memória eu decidi trabalhar com o padrão PGM ([Documento](https://en.wikipedia.org/wiki/Netpbm#File_formats) sobre o projeto **Netpbm** e os formatos de imagens definidos por eles.) que é o mais simples para implementar, embora ocupe muito espaço de memoria.
-  
-  A função que implementa a convolução **conv2D** recebe como parâmetros:
-- Uma Imagem
-- kernel/máscara(prefiro o termo kernel): um vetor de float
-- f: indicando a dimensão do kernel
-- s: stride, "saltos que o kernel dará durante a convolução" o padrão é 1
-- p: padding, quanto que a imagem original vai ser expandida antes de operar
-- same: boolean que se passado como true a imagem resultante será da mesma dimensão da imagem de entrada, caso seja false (padrão) as dimensões da imagem de saída será:
-
-$width_{out} = floor(\frac{width_{in} + 2*p - f}{s} + 1)$
-
-$height_{out} = floor(\frac{height_{in} + 2*p - f}{s} + 1)$
-
-  ![](img/conv.gif)
 
 # Robotics
 ## [Projeto: Futrobot - Software da Equipe Poti de Futebol de Robôs](https://github.com/potiufrn/Futrobot)
@@ -158,6 +141,24 @@ Algumas das tecnologias utilizadas:
 ![](img/demo_resultado_tcc.png)
 
 # Computer Vision and Image Digital Processing
+
+## [Filtragem Convolucional 2D](https://github.com/Gabriellgpc/my_personal_projects/tree/main/computer_vision/conv_from_scratch)
+  Implementação em C++ da operação de convolução com parâmetros adicionais (stride e padding).
+  Fiz umas abstração simples de uma classe Imagem, apenas para trabalhar com imagens em tons de cinza (poderia ter feito colorido também, sem grandes dificuldades a mais) e para carregar e salvar imagens da memória eu decidi trabalhar com o padrão PGM ([Documento](https://en.wikipedia.org/wiki/Netpbm#File_formats) sobre o projeto **Netpbm** e os formatos de imagens definidos por eles.) que é o mais simples para implementar, embora ocupe muito espaço de memoria.
+  
+  A função que implementa a convolução **conv2D** recebe como parâmetros:
+- Uma Imagem
+- kernel/máscara(prefiro o termo kernel): um vetor de float
+- f: indicando a dimensão do kernel
+- s: stride, "saltos que o kernel dará durante a convolução" o padrão é 1
+- p: padding, quanto que a imagem original vai ser expandida antes de operar
+- same: boolean que se passado como true a imagem resultante será da mesma dimensão da imagem de entrada, caso seja false (padrão) as dimensões da imagem de saída será:
+
+$width_{out} = floor(\frac{width_{in} + 2*p - f}{s} + 1)$
+
+$height_{out} = floor(\frac{height_{in} + 2*p - f}{s} + 1)$
+
+  ![](img/conv.gif)
 
 ## [Projetos básicos de Visão Computacional com OpenCV e Python](https://github.com/Gabriellgpc/my_personal_projects/tree/main/computer_vision)
   Não sei se vale a pena documentar para postar aqui ainda... Provavelmente vou deixar eles um pouco mais interessantes e fazer as versões em C++ antes de colocar um por um aqui.
