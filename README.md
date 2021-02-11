@@ -30,6 +30,7 @@ Kaggle: [kaggle/condados](https://www.kaggle.com/condados)
   - [Programas Desenvolvidos na Disciplina de Visão Computacional](#programas-desenvolvidos-na-disciplina-de-visão-computacional)
   - [Filtro de Borramento Adaptativo](#filtro-de-borramento-adaptativo)
   - [Transformada Hough para Identificação de Quadrados](#transformada-hough-para-identificação-de-quadrados)
+  - [Arte Com Fios](#arte-com-fios)
 - [Graphics Computing](#graphics-computing)
   - [Implementação do Algoritmo Raytracer em C++](#implementação-do-algoritmo-raytracer-em-c)
 - [Communication Systems](#communication-systems)
@@ -192,6 +193,11 @@ $height_{out} = height_{in} - f + 1$
   O trabalho apresenta uma implementação da transformada *Hough* para a identificação de quadrados pretos em imagens com fundo branco, o método usado é baseado na informação gradiente da imagem. Para isso foi feito a parametrização de um quadrado com a informação do centro do quadrado, tamanho do lado e orientação com relação ao eixo horizontal ($x_c, y_c, l, \theta$), por isso o espaço de configuração terá dimensão $4$. Para fazer o mapeamento entre o espaço de imagem e o de parâmetros foi utilizado a informação do gradiente da imagem e um ponto de borda, para com isso obter-se as normais do quadrado e com isso estimar os quatro parâmetros. Após o mapeamento/acumulo dos indicadores é feito uma etapa de filtragem dos quadrados, para melhorar a precisão da detecção.
 
   ![](img/demo_hough4squares.png)
+
+## [Arte Com Fios](https://github.com/Gabriellgpc/my_personal_projects/tree/main/computer_vision/knitty_art)
+Este projeto se trata da minha implementação para reproduzir o trabalho de arte com fios [Art Nitka](https://www.instagram.com/art.nitka/?utm_source=ig_embed). O programa recebe uma imagem e gera, através de um processo por busca exaustiva, uma imagem feita apenas com linhas pretas em um fundo branco que tenta reproduzir a imagem original.
+
+![](img/demo_knitty_art.png)
 
 # Graphics Computing
 ## [Implementação do Algoritmo Raytracer em C++](https://github.com/Gabriellgpc/raytracing)
