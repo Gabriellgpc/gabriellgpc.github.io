@@ -13,6 +13,7 @@ Kaggle: [kaggle/condados](https://www.kaggle.com/condados)
 - [Machine Learning](#machine-learning)
   - [Digit Recognizer](#digit-recognizer)
   - [classification challenge - Dogs vs. Cats](#classification-challenge---dogs-vs-cats)
+  - [Working on: RSNA Pneumonia Detection Challenge](#working-on-rsna-pneumonia-detection-challenge)
 - [Robotics](#robotics)
   - [Projeto: Futrobot - Software da Equipe Poti de Futebol de Robôs](#projeto-futrobot---software-da-equipe-poti-de-futebol-de-robôs)
   - [Path Planning Using Potential Field Algorithm and Occupancy Grid on the CoppeliaSim (VREP)](#path-planning-using-potential-field-algorithm-and-occupancy-grid-on-the-coppeliasim-vrep)
@@ -61,6 +62,10 @@ Ainda estou organizando essa página, vou deixar essa misturada de inglês com p
 
   ![](img/demo_dog_vs_cats_predics.png)
 
+## [Working on: RSNA Pneumonia Detection Challenge](https://www.kaggle.com/c/rsna-pneumonia-detection-challenge/overview)
+In this competition, the challenge is to build an algorithm to detect a visual signal for pneumonia in medical images. Specifically, the algorithm needs to automatically locate lung opacities on chest radiographs.
+
+![](img/demo_pneumonia_dataset.png)
 
 # Robotics
 ## [Projeto: Futrobot - Software da Equipe Poti de Futebol de Robôs](https://github.com/potiufrn/Futrobot)
