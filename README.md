@@ -144,19 +144,28 @@ Algumas das tecnologias utilizadas:
 
 ## [Filtragem Convolucional 2D](https://github.com/Gabriellgpc/my_personal_projects/tree/main/computer_vision/conv_from_scratch)
   Implementação em C++ da operação de convolução com parâmetros adicionais (stride e padding).
-  Fiz umas abstração simples de uma classe Imagem, apenas para trabalhar com imagens em tons de cinza (poderia ter feito colorido também, sem grandes dificuldades a mais) e para carregar e salvar imagens da memória eu decidi trabalhar com o padrão PGM ([Documento](https://en.wikipedia.org/wiki/Netpbm#File_formats) sobre o projeto **Netpbm** e os formatos de imagens definidos por eles.) que é o mais simples para implementar, embora ocupe muito espaço de memoria.
+  Criei uma classe **Imagem**, apenas para trabalhar com imagens em tons de cinza (poderia ter feito colorido também, sem grandes dificuldades a mais) e para carregar e salvar imagens da memória eu decidi trabalhar com o padrão PGM ([Documento](https://en.wikipedia.org/wiki/Netpbm#File_formats) sobre o projeto **Netpbm** e os formatos de imagens definidos por eles.) que é o mais simples para implementar, embora ocupe muito espaço de memoria.
   
   A função que implementa a convolução **conv2D** recebe como parâmetros:
 - Uma Imagem
 - kernel/máscara(prefiro o termo kernel): um vetor de float
-- f: indicando a dimensão do kernel
+- f: tamanho do kernel (f x f)
 - s: stride, "saltos que o kernel dará durante a convolução" o padrão é 1
 - p: padding, quanto que a imagem original vai ser expandida antes de operar
-- same: boolean que se passado como true a imagem resultante será da mesma dimensão da imagem de entrada, caso seja false (padrão) as dimensões da imagem de saída será:
+- same: boolean que se passado como true a imagem resultante possuirá as mesmas dimensões que a imagem de entrada, caso seja false (padrão) as dimensões da imagem de saída serão:
 
 $width_{out} = floor(\frac{width_{in} + 2*p - f}{s} + 1)$
 
 $height_{out} = floor(\frac{height_{in} + 2*p - f}{s} + 1)$
+
+O caso sem usar padding e stride (caso "normal"):
+
+$p = 0$, $s = 1$,
+
+$width_{out} = width_{in}-f + 1$
+
+$height_{out} = height_{in} - f + 1$
+
 
   ![](img/conv.gif)
 
@@ -171,7 +180,7 @@ $height_{out} = floor(\frac{height_{in} + 2*p - f}{s} + 1)$
   O link leva para um blog que fiz para servir como documentação online das atividades que desenvolvi durante a disciplina de Visão Computacional da UFRN, a disciplina foi ministrada pelo professor Dr.[Rafael Beserra Gomes](https://dimap.ufrn.br/~rafaelbg/index.html).
 
 ## [Filtro de Borramento Adaptativo](https://github.com/Gabriellgpc/my_personal_projects/tree/main/computer_vision/adaptive_blurring)
-  O título resumiu bem o que o programa faz, mas sendo um pouco mais específico, o recebe uma imagem e aplica um filtro de borramento que é mais forte em regiões de não borda e um mais suave em regiões de borda.
+  O título resumiu bem o que o programa faz, mas sendo um pouco mais específico, o programa recebe uma imagem e aplica um filtro de borramento que é mais forte em regiões de não borda e um mais suave em regiões de borda.
 
   ![](img/demo_filtro_adaptativo.png)
 
@@ -180,7 +189,7 @@ $height_{out} = floor(\frac{height_{in} + 2*p - f}{s} + 1)$
 
   O método consiste em mapear determinados pixeis da imagem numa determinada célula no espaço de parâmetros que definem a figura geométrica. Esse procedimento é repetido para toda a imagem e as células do espaço de parâmetros são incrementadas, servindo assim de indicadores da existência de uma determinada forma.
 
-  Neste trabalho será apresentado uma implementação da transformada *Hough* para a identificação de quadrados pretos em imagens com fundo branco baseado no gradiente. Para isso foi feito a parametrização de um quadrado com a informação do centro do quadrado, tamanho do lado e orientação com relação ao eixo horizontal ($x_c, y_c, l, \theta$), por isso o espaço de configuração terá dimensão $4$. Para fazer o mapeamento entre o espaço de imagem e o de parâmetros foi utilizado a informação do gradiente da imagem e um ponto de borda, para com isso obter-se as normais do quadrado e com isso estimar os quatro parâmetros. Após o mapeamento/acumulo dos indicadores é feito uma etapa de filtragem dos quadrados, para melhorar a precisão da detecção.
+  O trabalho apresenta uma implementação da transformada *Hough* para a identificação de quadrados pretos em imagens com fundo branco, o método usado é baseado na informação gradiente da imagem. Para isso foi feito a parametrização de um quadrado com a informação do centro do quadrado, tamanho do lado e orientação com relação ao eixo horizontal ($x_c, y_c, l, \theta$), por isso o espaço de configuração terá dimensão $4$. Para fazer o mapeamento entre o espaço de imagem e o de parâmetros foi utilizado a informação do gradiente da imagem e um ponto de borda, para com isso obter-se as normais do quadrado e com isso estimar os quatro parâmetros. Após o mapeamento/acumulo dos indicadores é feito uma etapa de filtragem dos quadrados, para melhorar a precisão da detecção.
 
   ![](img/demo_hough4squares.png)
 
