@@ -14,6 +14,14 @@ Kaggle: [kaggle/condados](https://www.kaggle.com/condados)
   - [Digit Recognizer](#digit-recognizer)
   - [classification challenge - Dogs vs. Cats](#classification-challenge---dogs-vs-cats)
   - [Working on: RSNA Pneumonia Detection Challenge](#working-on-rsna-pneumonia-detection-challenge)
+- [Computer Vision and Image Digital Processing](#computer-vision-and-image-digital-processing)
+  - [Filtragem Convolucional 2D](#filtragem-convolucional-2d)
+  - [Projetos básicos de Visão Computacional com OpenCV e Python](#projetos-básicos-de-visão-computacional-com-opencv-e-python)
+  - [Programas Desenvolvidos na Disciplina de Processamento Digital de Imagens](#programas-desenvolvidos-na-disciplina-de-processamento-digital-de-imagens)
+  - [Programas Desenvolvidos na Disciplina de Visão Computacional](#programas-desenvolvidos-na-disciplina-de-visão-computacional)
+  - [Filtro de Borramento Adaptativo](#filtro-de-borramento-adaptativo)
+  - [Transformada Hough para Identificação de Quadrados](#transformada-hough-para-identificação-de-quadrados)
+  - [Arte Com Fios](#arte-com-fios)
 - [Robotics](#robotics)
   - [Projeto: Futrobot - Software da Equipe Poti de Futebol de Robôs](#projeto-futrobot---software-da-equipe-poti-de-futebol-de-robôs)
   - [Path Planning Using Potential Field Algorithm and Occupancy Grid on the CoppeliaSim (VREP)](#path-planning-using-potential-field-algorithm-and-occupancy-grid-on-the-coppeliasim-vrep)
@@ -24,14 +32,6 @@ Kaggle: [kaggle/condados](https://www.kaggle.com/condados)
 - [Embedded Systems](#embedded-systems)
   - [Futrobot-firwmare](#futrobot-firwmare)
   - [Projeto de Controle Embarcado para Robôs com Acionamento Diferencial e Encoders de Baixa Resolução](#projeto-de-controle-embarcado-para-robôs-com-acionamento-diferencial-e-encoders-de-baixa-resolução)
-- [Computer Vision and Image Digital Processing](#computer-vision-and-image-digital-processing)
-  - [Filtragem Convolucional 2D](#filtragem-convolucional-2d)
-  - [Projetos básicos de Visão Computacional com OpenCV e Python](#projetos-básicos-de-visão-computacional-com-opencv-e-python)
-  - [Programas Desenvolvidos na Disciplina de Processamento Digital de Imagens](#programas-desenvolvidos-na-disciplina-de-processamento-digital-de-imagens)
-  - [Programas Desenvolvidos na Disciplina de Visão Computacional](#programas-desenvolvidos-na-disciplina-de-visão-computacional)
-  - [Filtro de Borramento Adaptativo](#filtro-de-borramento-adaptativo)
-  - [Transformada Hough para Identificação de Quadrados](#transformada-hough-para-identificação-de-quadrados)
-  - [Arte Com Fios](#arte-com-fios)
 - [Graphics Computing](#graphics-computing)
   - [Implementação do Algoritmo Raytracer em C++](#implementação-do-algoritmo-raytracer-em-c)
 - [Communication Systems](#communication-systems)
@@ -66,6 +66,64 @@ Ainda estou organizando essa página, vou deixar essa misturada de inglês com p
 In this competition, the challenge is to build an algorithm to detect a visual signal for pneumonia in medical images. Specifically, the algorithm needs to automatically locate lung opacities on chest radiographs.
 
 ![](img/demo_pneumonia_dataset.png)
+
+# Computer Vision and Image Digital Processing
+
+## [Filtragem Convolucional 2D](https://github.com/Gabriellgpc/my_personal_projects/tree/main/computer_vision/conv_from_scratch)
+  Implementação em C++ da operação de convolução com parâmetros adicionais (stride e padding).
+  Criei uma classe **Imagem**, apenas para trabalhar com imagens em tons de cinza (poderia ter feito colorido também, sem grandes dificuldades a mais) e para carregar e salvar imagens da memória eu decidi trabalhar com o padrão PGM ([Documento](https://en.wikipedia.org/wiki/Netpbm#File_formats) sobre o projeto **Netpbm** e os formatos de imagens definidos por eles.) que é o mais simples para implementar, embora ocupe muito espaço de memoria.
+  
+  A função que implementa a convolução **conv2D** recebe como parâmetros:
+- Uma Imagem
+- kernel/máscara(prefiro o termo kernel): um vetor de float
+- f: tamanho do kernel (f x f)
+- s: stride, "saltos que o kernel dará durante a convolução" o padrão é 1
+- p: padding, quanto que a imagem original vai ser expandida antes de operar
+- same: boolean que se passado como true a imagem resultante possuirá as mesmas dimensões que a imagem de entrada, caso seja false (padrão) as dimensões da imagem de saída serão:
+
+$width_{out} = floor(\frac{width_{in} + 2*p - f}{s} + 1)$
+
+$height_{out} = floor(\frac{height_{in} + 2*p - f}{s} + 1)$
+
+O caso sem usar padding e stride (caso "normal"):
+
+$p = 0$, $s = 1$,
+
+$width_{out} = width_{in}-f + 1$
+
+$height_{out} = height_{in} - f + 1$
+
+
+  ![](img/conv.gif)
+
+## [Projetos básicos de Visão Computacional com OpenCV e Python](https://github.com/Gabriellgpc/my_personal_projects/tree/main/computer_vision)
+  Não sei se vale a pena documentar para postar aqui ainda... Provavelmente vou deixar eles um pouco mais interessantes e fazer as versões em C++ antes de colocar um por um aqui.
+
+## [Programas Desenvolvidos na Disciplina de Processamento Digital de Imagens](https://gabriellgpc.github.io/processamento_digital_de_imagens_UFRN/)
+  O link leva para um blog que fiz para servir como documentação online das atividades que desenvolvi durante a disciplina de Processamento Digital de Imagens do Departamento de Engenharia de Computação e Automação (DCA) da UFRN, a disciplina foi ministrada pelo professor Dr. [Agostinho de Brito Junior](https://agostinhobritojr.github.io/).
+
+
+## [Programas Desenvolvidos na Disciplina de Visão Computacional](https://gabriellgpc.github.io/visao_computacional_DIM0141/)
+  O link leva para um blog que fiz para servir como documentação online das atividades que desenvolvi durante a disciplina de Visão Computacional da UFRN, a disciplina foi ministrada pelo professor Dr.[Rafael Beserra Gomes](https://dimap.ufrn.br/~rafaelbg/index.html).
+
+## [Filtro de Borramento Adaptativo](https://github.com/Gabriellgpc/my_personal_projects/tree/main/computer_vision/adaptive_blurring)
+  O título resumiu bem o que o programa faz, mas sendo um pouco mais específico, o programa recebe uma imagem e aplica um filtro de borramento que é mais forte em regiões de não borda e um mais suave em regiões de borda.
+
+  ![](img/demo_filtro_adaptativo.png)
+
+## [Transformada Hough para Identificação de Quadrados](https://github.com/Gabriellgpc/my_personal_projects/tree/main/computer_vision/hough_square)
+  A transformada de *Hough* é um método comum para detecção de formas que são facilmente parametrizáveis (formas comuns: linhas e círculos). Geralmente essa transformada é utilizada após a etapa de pré-processamento de detecção de bordas.
+
+  O método consiste em mapear determinados pixeis da imagem numa determinada célula no espaço de parâmetros que definem a figura geométrica. Esse procedimento é repetido para toda a imagem e as células do espaço de parâmetros são incrementadas, servindo assim de indicadores da existência de uma determinada forma.
+
+  O trabalho apresenta uma implementação da transformada *Hough* para a identificação de quadrados pretos em imagens com fundo branco, o método usado é baseado na informação gradiente da imagem. Para isso foi feito a parametrização de um quadrado com a informação do centro do quadrado, tamanho do lado e orientação com relação ao eixo horizontal ($x_c, y_c, l, \theta$), por isso o espaço de configuração terá dimensão $4$. Para fazer o mapeamento entre o espaço de imagem e o de parâmetros foi utilizado a informação do gradiente da imagem e um ponto de borda, para com isso obter-se as normais do quadrado e com isso estimar os quatro parâmetros. Após o mapeamento/acumulo dos indicadores é feito uma etapa de filtragem dos quadrados, para melhorar a precisão da detecção.
+
+  ![](img/demo_hough4squares.png)
+
+## [Arte Com Fios](https://github.com/Gabriellgpc/my_personal_projects/tree/main/computer_vision/knitty_art)
+Este projeto se trata da minha implementação para reproduzir o trabalho de arte com fios [Art Nitka](https://www.instagram.com/art.nitka/?utm_source=ig_embed). O programa recebe uma imagem e gera, através de um processo por busca exaustiva, uma imagem feita apenas com linhas pretas em um fundo branco que tenta reproduzir a imagem original.
+
+![](img/demo_knitty_art.png)
 
 # Robotics
 ## [Projeto: Futrobot - Software da Equipe Poti de Futebol de Robôs](https://github.com/potiufrn/Futrobot)
@@ -145,64 +203,6 @@ Algumas das tecnologias utilizadas:
 - **Linguagem de Programação C e ESP-SDK**: Programei em C usando o kit de desenvolvendo (libs) da desenvolvedora do mesmo (ESP-SDK).
 
 ![](img/demo_resultado_tcc.png)
-
-# Computer Vision and Image Digital Processing
-
-## [Filtragem Convolucional 2D](https://github.com/Gabriellgpc/my_personal_projects/tree/main/computer_vision/conv_from_scratch)
-  Implementação em C++ da operação de convolução com parâmetros adicionais (stride e padding).
-  Criei uma classe **Imagem**, apenas para trabalhar com imagens em tons de cinza (poderia ter feito colorido também, sem grandes dificuldades a mais) e para carregar e salvar imagens da memória eu decidi trabalhar com o padrão PGM ([Documento](https://en.wikipedia.org/wiki/Netpbm#File_formats) sobre o projeto **Netpbm** e os formatos de imagens definidos por eles.) que é o mais simples para implementar, embora ocupe muito espaço de memoria.
-  
-  A função que implementa a convolução **conv2D** recebe como parâmetros:
-- Uma Imagem
-- kernel/máscara(prefiro o termo kernel): um vetor de float
-- f: tamanho do kernel (f x f)
-- s: stride, "saltos que o kernel dará durante a convolução" o padrão é 1
-- p: padding, quanto que a imagem original vai ser expandida antes de operar
-- same: boolean que se passado como true a imagem resultante possuirá as mesmas dimensões que a imagem de entrada, caso seja false (padrão) as dimensões da imagem de saída serão:
-
-$width_{out} = floor(\frac{width_{in} + 2*p - f}{s} + 1)$
-
-$height_{out} = floor(\frac{height_{in} + 2*p - f}{s} + 1)$
-
-O caso sem usar padding e stride (caso "normal"):
-
-$p = 0$, $s = 1$,
-
-$width_{out} = width_{in}-f + 1$
-
-$height_{out} = height_{in} - f + 1$
-
-
-  ![](img/conv.gif)
-
-## [Projetos básicos de Visão Computacional com OpenCV e Python](https://github.com/Gabriellgpc/my_personal_projects/tree/main/computer_vision)
-  Não sei se vale a pena documentar para postar aqui ainda... Provavelmente vou deixar eles um pouco mais interessantes e fazer as versões em C++ antes de colocar um por um aqui.
-
-## [Programas Desenvolvidos na Disciplina de Processamento Digital de Imagens](https://gabriellgpc.github.io/processamento_digital_de_imagens_UFRN/)
-  O link leva para um blog que fiz para servir como documentação online das atividades que desenvolvi durante a disciplina de Processamento Digital de Imagens do Departamento de Engenharia de Computação e Automação (DCA) da UFRN, a disciplina foi ministrada pelo professor Dr. [Agostinho de Brito Junior](https://agostinhobritojr.github.io/).
-
-
-## [Programas Desenvolvidos na Disciplina de Visão Computacional](https://gabriellgpc.github.io/visao_computacional_DIM0141/)
-  O link leva para um blog que fiz para servir como documentação online das atividades que desenvolvi durante a disciplina de Visão Computacional da UFRN, a disciplina foi ministrada pelo professor Dr.[Rafael Beserra Gomes](https://dimap.ufrn.br/~rafaelbg/index.html).
-
-## [Filtro de Borramento Adaptativo](https://github.com/Gabriellgpc/my_personal_projects/tree/main/computer_vision/adaptive_blurring)
-  O título resumiu bem o que o programa faz, mas sendo um pouco mais específico, o programa recebe uma imagem e aplica um filtro de borramento que é mais forte em regiões de não borda e um mais suave em regiões de borda.
-
-  ![](img/demo_filtro_adaptativo.png)
-
-## [Transformada Hough para Identificação de Quadrados](https://github.com/Gabriellgpc/my_personal_projects/tree/main/computer_vision/hough_square)
-  A transformada de *Hough* é um método comum para detecção de formas que são facilmente parametrizáveis (formas comuns: linhas e círculos). Geralmente essa transformada é utilizada após a etapa de pré-processamento de detecção de bordas.
-
-  O método consiste em mapear determinados pixeis da imagem numa determinada célula no espaço de parâmetros que definem a figura geométrica. Esse procedimento é repetido para toda a imagem e as células do espaço de parâmetros são incrementadas, servindo assim de indicadores da existência de uma determinada forma.
-
-  O trabalho apresenta uma implementação da transformada *Hough* para a identificação de quadrados pretos em imagens com fundo branco, o método usado é baseado na informação gradiente da imagem. Para isso foi feito a parametrização de um quadrado com a informação do centro do quadrado, tamanho do lado e orientação com relação ao eixo horizontal ($x_c, y_c, l, \theta$), por isso o espaço de configuração terá dimensão $4$. Para fazer o mapeamento entre o espaço de imagem e o de parâmetros foi utilizado a informação do gradiente da imagem e um ponto de borda, para com isso obter-se as normais do quadrado e com isso estimar os quatro parâmetros. Após o mapeamento/acumulo dos indicadores é feito uma etapa de filtragem dos quadrados, para melhorar a precisão da detecção.
-
-  ![](img/demo_hough4squares.png)
-
-## [Arte Com Fios](https://github.com/Gabriellgpc/my_personal_projects/tree/main/computer_vision/knitty_art)
-Este projeto se trata da minha implementação para reproduzir o trabalho de arte com fios [Art Nitka](https://www.instagram.com/art.nitka/?utm_source=ig_embed). O programa recebe uma imagem e gera, através de um processo por busca exaustiva, uma imagem feita apenas com linhas pretas em um fundo branco que tenta reproduzir a imagem original.
-
-![](img/demo_knitty_art.png)
 
 # Graphics Computing
 ## [Implementação do Algoritmo Raytracer em C++](https://github.com/Gabriellgpc/raytracing)
