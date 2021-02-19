@@ -40,7 +40,7 @@ Kaggle: [kaggle/condados](https://www.kaggle.com/condados)
   - [Workshop: Python Overview](#workshop-python-overview)
 - [Otimização de Sistemas (estou testando compartilhar projetos feitos no Colab aqui ainda)](#otimização-de-sistemas-estou-testando-compartilhar-projetos-feitos-no-colab-aqui-ainda)
   - [Método Simplex em Python](#método-simplex-em-python)
-  - [Método Simplex Para Problemas de Oferta e Demanda e Análise de Funções Não Lineares](#método-simplex-para-problemas-de-oferta-e-demanda-e-análise-de-funções-não-lineares)
+  - [Método Simplex: Problema Transporte e Análise de Funções Não Lineares](#método-simplex-problema-transporte-e-análise-de-funções-não-lineares)
 - [Alguns dos Projetos que Estou Organizando para Publicar Aqui](#alguns-dos-projetos-que-estou-organizando-para-publicar-aqui)
 - [Tutoriais e Dicas](#tutoriais-e-dicas)
   - [Linux](#linux)
@@ -244,7 +244,7 @@ Nesse link eu compartilho um projeto que desenvolvi no ambiente Colab, esse proj
 
 O uso mais comum do Simplex é para se maximizar um resultado, ou seja, encontrar o maior valor possível para um total. Problemas típicos para se resolver com o Simplex são os que buscam quantidades ideais de produtos a serem comercializados, com restrições referentes ao armazenamento e à fabricação dos mesmos. A ideia é isolar uma função como sendo o objetivo."[Algoritmo Simplex - wiki](https://pt.wikipedia.org/wiki/Algoritmo_simplex)
 
-## [Método Simplex Para Problemas de Oferta e Demanda e Análise de Funções Não Lineares](https://colab.research.google.com/drive/1lwhyzhjdp0jzxTR15mgW9RGk5HwV9H5Y?usp=sharing)
+## [Método Simplex: Problema Transporte e Análise de Funções Não Lineares](https://colab.research.google.com/drive/1lwhyzhjdp0jzxTR15mgW9RGk5HwV9H5Y?usp=sharing)
 Assim como o projeto [anterior](#método-simplex-em-python) esta foi minha solução para uma prova da disciplina de otimização (segunda avaliação), o objetivo foi resolver um problema de oferta e demanda usando o método simplex, ou seja, encontrar a configuração ótima de quantos produtos devem sair de um fornecedor X para um destino Y de forma a reduzir os custos da operação.
 Além disso, foi pedido para se realizar análises sobre os pontos críticos de algumas dadas funções convexas: encontrar os pontos críticos (derivada zero) e descobrir se esses pontos são pontos de mínimo, máximo ou nenhum dos dois por meio da análise da Hessiana da função.
 
