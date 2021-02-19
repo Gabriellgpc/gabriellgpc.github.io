@@ -230,6 +230,15 @@ A ideia era mostrar e ensinar o básico (com práticas e demostrações) sobre f
 * Scipy
 * Pandas
 
+# Otimização de Sistemas (estou testando compartilhar projetos feitos no Colab aqui ainda)
+
+## [Método Simplex em Python](https://colab.research.google.com/drive/18L2pxdoa-UfzP-9FWdCd0MMMhl4qUor7?usp=sharing)
+Nesse link eu compartilho um projeto que desenvolvi no ambiente Colab, esse projeto foi minha solução para a prova de uma disciplina de **Otimização de Sistemas**, o objetivo era resolver uma sequência de problemas de otimizações utilizando o método **simplex**. Eramos livres para escolher como implementar a solução, eu resolvi fazer em python e utilizando o ambiente jupyter-notebook.
+
+"O Simplex permite que se encontre valores ideais em situações em que diversos aspectos precisam ser respeitados. Diante de um problema, são estabelecidas inequações que representam restrições para as variáveis. A partir daí, testa-se possibilidades de maneira a otimizar o resultado.
+
+O uso mais comum do Simplex é para se maximizar um resultado, ou seja, encontrar o maior valor possível para um total. Problemas típicos para se resolver com o Simplex são os que buscam quantidades ideais de produtos a serem comercializados, com restrições referentes ao armazenamento e à fabricação dos mesmos. A ideia é isolar uma função como sendo o objetivo."[Algoritmo Simplex - wiki](https://pt.wikipedia.org/wiki/Algoritmo_simplex)
+
 # [Alguns dos Projetos que Estou Organizando para Publicar Aqui](https://github.com/Gabriellgpc/my_personal_projects)
   Vou introduzir cada um deles aqui e criar uma documentação em cada um deles ainda.
 
