@@ -1,6 +1,6 @@
 <!-- # Luís Gabriel Pereira Condados -->
 
-# Contatos e Informações:
+# Contatos e Informações
 Email: [condadoslgpc@gmail.com](condadoslgpc@gmail.com)\
 Github: [github.io/gabriellgpc](github.io/gabriellgpc)\
 Linkedin: [linkedin.com/in/lgabrielpc](https://www.linkedin.com/in/lgabrielpc)\
@@ -9,10 +9,10 @@ Youtube: [youtube.com/channel/UCGqW9GuMni6KTZkLF2dxu4g](https://www.youtube.com/
 Kaggle: [kaggle/condados](https://www.kaggle.com/condados)
 
 -------
-- [Contatos e Informações:](#contatos-e-informações)
+- [Contatos e Informações](#contatos-e-informações)
 - [Machine Learning](#machine-learning)
   - [Digit Recognizer](#digit-recognizer)
-  - [classification challenge - Dogs vs. Cats](#classification-challenge---dogs-vs-cats)
+  - [Classification Challenge - Dogs vs. Cats](#classification-challenge---dogs-vs-cats)
   - [Working on: RSNA Pneumonia Detection Challenge](#working-on-rsna-pneumonia-detection-challenge)
 - [Computer Vision and Image Digital Processing](#computer-vision-and-image-digital-processing)
   - [Filtragem Convolucional 2D](#filtragem-convolucional-2d)
@@ -38,6 +38,8 @@ Kaggle: [kaggle/condados](https://www.kaggle.com/condados)
 - [Biblioteca BluetoothAction](#biblioteca-bluetoothaction)
 - [Workshops](#workshops)
   - [Workshop: Python Overview](#workshop-python-overview)
+- [Otimização de Sistemas (estou testando compartilhar projetos feitos no Colab aqui ainda)](#otimização-de-sistemas-estou-testando-compartilhar-projetos-feitos-no-colab-aqui-ainda)
+  - [Método Simplex em Python](#método-simplex-em-python)
 - [Alguns dos Projetos que Estou Organizando para Publicar Aqui](#alguns-dos-projetos-que-estou-organizando-para-publicar-aqui)
 - [Tutoriais e Dicas](#tutoriais-e-dicas)
   - [Linux](#linux)
@@ -46,7 +48,9 @@ Kaggle: [kaggle/condados](https://www.kaggle.com/condados)
   - [Vim](#vim)
   - [Template ESP Project](#template-esp-project)
 
-Ainda estou organizando essa página, vou deixar essa misturada de inglês com português por hora ...
+Ainda estou organizando essa página... Por hora é apenas uma coletanea de alguns dos projetos que fiz ou que estou fazendo. No título do projeto eu deixo um link para o código fonte de cada um (então basta clicar no título do projeto).
+
+Nota: Talvez este documento apresente alguns problemas de formatação, isso é devido principalmente ao fato de que a maior parte da documentação eu estou trazendo direto das minhas documentações em Latex e/ou Asciidoc(tor).
 
 -------
 # Machine Learning
@@ -57,7 +61,7 @@ Ainda estou organizando essa página, vou deixar essa misturada de inglês com p
 
   ![](img/demo_predic_MNIST.png)
 
-## [classification challenge - Dogs vs. Cats](https://www.kaggle.com/condados/my-cnn-for-dog-vs-cats)
+## [Classification Challenge - Dogs vs. Cats](https://www.kaggle.com/condados/my-cnn-for-dog-vs-cats)
   In this competition, I wrote an algorithm to classify whether images contain either a dog or a cat. The training archive contains 25,000 images of dogs and cats (1 = dog, 0 = cat).[Dogs vs Cats Competition](https://www.kaggle.com/c/dogs-vs-cats/overview)
 
   ![](img/demo_dog_vs_cats_predics.png)
