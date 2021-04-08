@@ -55,6 +55,12 @@ Nota: Talvez este documento apresente alguns problemas de formatação, isso é 
 
 -------
 # Machine Learning
+## [Classificar: Olhos abertos ou Fechados](https://github.com/Gabriellgpc/open_closed_eyes_classifier/blob/main/report.ipynb)
+
+  ![](img/ilustracao_EAR.png)
+  
+
+
 ## [Digit Recognizer](https://www.kaggle.com/condados/first-project-mnist-digit-nn)
   "MNIST ("Modified National Institute of Standards and Technology") is the de facto “hello world” dataset of computer vision. Since its release in 1999, this classic dataset of handwritten images has served as the basis for benchmarking classification algorithms. As new machine learning techniques emerge, MNIST remains a reliable resource for researchers and learners alike.
 
