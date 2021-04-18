@@ -11,6 +11,8 @@ Kaggle: [kaggle/condados](https://www.kaggle.com/condados)
 -------
 - [Contatos e Informações](#contatos-e-informações)
 - [Machine Learning](#machine-learning)
+  - [Classificar: Olhos abertos ou Fechados](#classificar-olhos-abertos-ou-fechados)
+  - [Experiment| Face Recognition](#experiment-face-recognition)
   - [Digit Recognizer](#digit-recognizer)
   - [Classification Challenge - Dogs vs. Cats](#classification-challenge---dogs-vs-cats)
   - [Working on: RSNA Pneumonia Detection Challenge](#working-on-rsna-pneumonia-detection-challenge)
@@ -59,6 +61,7 @@ Nota: Talvez este documento apresente alguns problemas de formatação, isso é 
 
   ![](img/ilustracao_EAR.png)
   
+## [Experiment| Face Recognition](https://github.com/Gabriellgpc/my_personal_projects/tree/main/machine_learning/face_recognition)
 
 
 ## [Digit Recognizer](https://www.kaggle.com/condados/first-project-mnist-digit-nn)
