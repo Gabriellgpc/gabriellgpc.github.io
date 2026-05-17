@@ -1,0 +1,386 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Luís Condados — Computer Vision Engineer</title>
+<meta name="description" content="Luís Condados — computer vision and ML engineer. Building acaua, an Apache-2.0 PyTorch-native CV library.">
+<meta property="og:title" content="Luís Condados — Computer Vision Engineer">
+<meta property="og:description" content="CV/ML engineer building open-source tools for vision.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://gabriellgpc.github.io/">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%E2%97%89%3C/text%3E%3C/svg%3E">
+<style>
+  :root {
+    --bg: #0a0a0a;
+    --bg-elev: #121212;
+    --bg-card: #141414;
+    --border: #232323;
+    --border-strong: #2e2e2e;
+    --text: #ededed;
+    --text-dim: #9a9a9a;
+    --text-faint: #6b6b6b;
+    --accent: #7dd3fc;
+    --accent-soft: rgba(125, 211, 252, 0.12);
+    --mono: ui-monospace, "SF Mono", "JetBrains Mono", Menlo, Consolas, monospace;
+    --sans: -apple-system, BlinkMacSystemFont, "Inter", "Segoe UI", system-ui, sans-serif;
+  }
+  @media (prefers-color-scheme: light) {
+    :root {
+      --bg: #fafafa;
+      --bg-elev: #ffffff;
+      --bg-card: #ffffff;
+      --border: #e8e8e8;
+      --border-strong: #d4d4d4;
+      --text: #0f0f0f;
+      --text-dim: #595959;
+      --text-faint: #8a8a8a;
+      --accent: #0369a1;
+      --accent-soft: rgba(3, 105, 161, 0.08);
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; }
+  body {
+    margin: 0;
+    font-family: var(--sans);
+    background: var(--bg);
+    color: var(--text);
+    font-size: 16px;
+    line-height: 1.6;
+    overflow-wrap: break-word;
+    overflow-x: hidden;
+  }
+  code { word-break: break-word; }
+  a { color: var(--text); text-decoration: none; border-bottom: 1px solid var(--border-strong); transition: color .15s, border-color .15s; }
+  a:hover { color: var(--accent); border-color: var(--accent); }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 80px 24px 120px; }
+  @media (max-width: 640px) { .wrap { padding: 48px 20px 80px; } }
+
+  /* Hero */
+  header.hero { margin-bottom: 64px; }
+  .eyebrow {
+    font-family: var(--mono);
+    font-size: 12px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--text-faint);
+    margin: 0 0 16px;
+    display: flex; align-items: center; gap: 8px;
+  }
+  .eyebrow .dot { width: 6px; height: 6px; border-radius: 50%; background: #22c55e; box-shadow: 0 0 8px #22c55e; }
+  h1 { font-size: 40px; font-weight: 600; letter-spacing: -0.02em; margin: 0 0 16px; line-height: 1.1; }
+  @media (max-width: 640px) { h1 { font-size: 32px; } }
+  .lede { font-size: 18px; color: var(--text-dim); margin: 0 0 28px; max-width: 560px; }
+  .lede strong { color: var(--text); font-weight: 500; }
+  .socials { display: flex; flex-wrap: wrap; gap: 8px; }
+  .socials a {
+    font-family: var(--mono);
+    font-size: 13px;
+    padding: 6px 12px;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    color: var(--text-dim);
+    background: var(--bg-elev);
+  }
+  .socials a:hover { color: var(--accent); border-color: var(--accent); background: var(--accent-soft); }
+
+  /* Section */
+  section { margin-bottom: 56px; }
+  h2 {
+    font-size: 13px;
+    font-family: var(--mono);
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--text-faint);
+    margin: 0 0 20px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  /* Now block */
+  .now p { margin: 0 0 12px; color: var(--text-dim); }
+  .now p:last-child { margin-bottom: 0; }
+  .now .highlight { color: var(--text); font-weight: 500; }
+
+  /* Featured cards */
+  .cards { display: grid; gap: 16px; }
+  .card {
+    display: block;
+    padding: 20px;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    color: var(--text);
+    border-bottom: 1px solid var(--border);
+    transition: border-color .15s, transform .15s, background .15s;
+  }
+  .card:hover { border-color: var(--border-strong); transform: translateY(-1px); background: var(--bg-elev); }
+  .card-head { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; margin-bottom: 8px; flex-wrap: wrap; }
+  .card-title { font-size: 17px; font-weight: 600; letter-spacing: -0.01em; }
+  .card-meta { font-family: var(--mono); font-size: 12px; color: var(--text-faint); }
+  .card-desc { color: var(--text-dim); font-size: 14.5px; margin: 0 0 12px; }
+  .tags { display: flex; flex-wrap: wrap; gap: 6px; }
+  .tag {
+    font-family: var(--mono);
+    font-size: 11px;
+    padding: 2px 8px;
+    border-radius: 4px;
+    background: var(--accent-soft);
+    color: var(--accent);
+  }
+
+  /* Compact list */
+  .list { display: grid; gap: 4px; }
+  .list-item {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 16px;
+    padding: 12px 0;
+    border-bottom: 1px solid var(--border);
+    align-items: baseline;
+  }
+  .list-item:last-child { border-bottom: none; }
+  .list-item a { border: none; }
+  .list-item a:hover { color: var(--accent); }
+  .list-title { font-size: 15px; }
+  .list-desc { display: block; color: var(--text-faint); font-size: 13px; margin-top: 2px; }
+  .list-meta { font-family: var(--mono); font-size: 12px; color: var(--text-faint); white-space: nowrap; }
+
+  /* Footer */
+  footer {
+    margin-top: 80px;
+    padding-top: 24px;
+    border-top: 1px solid var(--border);
+    color: var(--text-faint);
+    font-size: 13px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  footer a { color: var(--text-faint); border: none; }
+  footer a:hover { color: var(--accent); }
+  footer .mono { font-family: var(--mono); }
+
+  /* Code accent */
+  code {
+    font-family: var(--mono);
+    font-size: 0.92em;
+    background: var(--accent-soft);
+    color: var(--accent);
+    padding: 1px 6px;
+    border-radius: 4px;
+  }
+</style>
+</head>
+<body>
+<main class="wrap">
+
+  <header class="hero">
+    <p class="eyebrow"><span class="dot"></span> Available for CV / ML work</p>
+    <h1>Luís Condados</h1>
+    <p class="lede">
+      Computer vision and ML engineer. I build <strong>open-source tools</strong>
+      for perception — detection, segmentation, OCR, VLMs — with a bias toward
+      <strong>small, sharp APIs</strong> over framework sprawl.
+    </p>
+    <div class="socials">
+      <a href="https://github.com/gabriellgpc">GitHub</a>
+      <a href="https://huggingface.co/CondadosAI">Hugging Face</a>
+      <a href="https://www.linkedin.com/in/lgabrielpc">LinkedIn</a>
+      <a href="https://www.kaggle.com/condados">Kaggle</a>
+      <a href="mailto:condadoslgpc@gmail.com">Email</a>
+    </div>
+  </header>
+
+  <section class="now">
+    <h2>Now</h2>
+    <p>
+      Building <a href="https://github.com/CondadosAI/acaua"><span class="highlight">acaua</span></a> —
+      an Apache-2.0, PyTorch-native computer vision library. One API
+      (<code>predict</code> / <code>train</code> / <code>export</code>) across detection, segmentation,
+      OBB, OCR, VLMs, and zero-shot.
+    </p>
+    <p>
+      The goal: a pythonic alternative to mmdet and PaddleDetection — fewer abstractions,
+      less YAML, friendlier extras like <code>acaua[ocr]</code>, <code>acaua[vlm]</code>,
+      <code>acaua[zeroshot]</code>, <code>acaua[export]</code>.
+    </p>
+  </section>
+
+  <section>
+    <h2>Featured</h2>
+    <div class="cards">
+
+      <a class="card" href="https://github.com/CondadosAI/acaua">
+        <div class="card-head">
+          <span class="card-title">acaua</span>
+          <span class="card-meta">Python · Apache-2.0</span>
+        </div>
+        <p class="card-desc">
+          PyTorch-native CV library with a single unified API. One class to learn, one to remember.
+        </p>
+        <div class="tags">
+          <span class="tag">pytorch</span>
+          <span class="tag">detection</span>
+          <span class="tag">segmentation</span>
+          <span class="tag">ocr</span>
+          <span class="tag">vlm</span>
+        </div>
+      </a>
+
+      <a class="card" href="https://www.kaggle.com/c/rsna-pneumonia-detection-challenge/overview">
+        <div class="card-head">
+          <span class="card-title">RSNA Pneumonia Detection</span>
+          <span class="card-meta">Medical CV</span>
+        </div>
+        <p class="card-desc">
+          Locating lung opacities on chest radiographs — detection on a real medical imaging benchmark.
+        </p>
+        <div class="tags">
+          <span class="tag">medical-imaging</span>
+          <span class="tag">detection</span>
+        </div>
+      </a>
+
+      <a class="card" href="https://www.youtube.com/watch?v=axL8ux_x6Vs">
+        <div class="card-head">
+          <span class="card-title">Self-Driving Car · CARLA</span>
+          <span class="card-meta">Robotics</span>
+        </div>
+        <p class="card-desc">
+          Lateral and longitudinal controllers, full self-driving stack built during the Coursera
+          Self-Driving Cars specialization.
+        </p>
+        <div class="tags">
+          <span class="tag">carla</span>
+          <span class="tag">control</span>
+          <span class="tag">autonomy</span>
+        </div>
+      </a>
+
+      <a class="card" href="https://github.com/Gabriellgpc/my_personal_projects/tree/main/computer_vision/knitty_art">
+        <div class="card-head">
+          <span class="card-title">String Art</span>
+          <span class="card-meta">Computer vision</span>
+        </div>
+        <p class="card-desc">
+          Reproduces a target image using only black thread on white — exhaustive search over line
+          configurations to approximate tone and form.
+        </p>
+        <div class="tags">
+          <span class="tag">opencv</span>
+          <span class="tag">generative</span>
+        </div>
+      </a>
+
+      <a class="card" href="https://github.com/potiufrn/Futrobot">
+        <div class="card-head">
+          <span class="card-title">Futrobot</span>
+          <span class="card-meta">C++ · Robotics</span>
+        </div>
+        <p class="card-desc">
+          Full software stack for UFRN's Poti robot soccer team — vision, AI, control, Bluetooth
+          comms, custom V4L2 camera layer.
+        </p>
+        <div class="tags">
+          <span class="tag">cpp</span>
+          <span class="tag">qt</span>
+          <span class="tag">opencv</span>
+          <span class="tag">v4l2</span>
+        </div>
+      </a>
+
+      <a class="card" href="https://github.com/Gabriellgpc/raytracing">
+        <div class="card-head">
+          <span class="card-title">Raytracer</span>
+          <span class="card-meta">C++ · OpenMP</span>
+        </div>
+        <p class="card-desc">
+          Raytracing renderer in C++ with OpenGL for rasterization and OpenMP for parallel pixel
+          shading.
+        </p>
+        <div class="tags">
+          <span class="tag">cpp</span>
+          <span class="tag">graphics</span>
+          <span class="tag">openmp</span>
+        </div>
+      </a>
+
+    </div>
+  </section>
+
+  <section>
+    <h2>Selected work</h2>
+    <div class="list">
+
+      <div class="list-item">
+        <a href="https://github.com/Gabriellgpc/open_closed_eyes_classifier/blob/main/report.ipynb">
+          <span class="list-title">Eye state classifier</span>
+          <span class="list-desc">Open vs. closed eye detection using EAR features.</span>
+        </a>
+        <span class="list-meta">ml · cv</span>
+      </div>
+
+      <div class="list-item">
+        <a href="https://github.com/Gabriellgpc/my_personal_projects/tree/main/computer_vision/conv_from_scratch">
+          <span class="list-title">2D convolution from scratch</span>
+          <span class="list-desc">C++ implementation with stride, padding, PGM I/O.</span>
+        </a>
+        <span class="list-meta">cpp</span>
+      </div>
+
+      <div class="list-item">
+        <a href="https://github.com/Gabriellgpc/my_personal_projects/tree/main/computer_vision/hough_square">
+          <span class="list-title">Hough transform for squares</span>
+          <span class="list-desc">4D parameter space using gradient-normal voting.</span>
+        </a>
+        <span class="list-meta">cv</span>
+      </div>
+
+      <div class="list-item">
+        <a href="https://github.com/Gabriellgpc/sistemas_roboticos_autonomos/tree/master/program/p3m3">
+          <span class="list-title">Potential-field path planning</span>
+          <span class="list-desc">Path planner over an occupancy grid, simulated in CoppeliaSim.</span>
+        </a>
+        <span class="list-meta">robotics</span>
+      </div>
+
+      <div class="list-item">
+        <a href="https://github.com/Gabriellgpc/TCC---Controle-Embarcado/blob/main/TCC_LGabriel.pdf">
+          <span class="list-title">Embedded motor control (thesis)</span>
+          <span class="list-desc">Kalman-filter state estimation for diff-drive robots on ESP-SDK.</span>
+        </a>
+        <span class="list-meta">embedded · c</span>
+      </div>
+
+      <div class="list-item">
+        <a href="https://github.com/Gabriellgpc/python_workshop_overview">
+          <span class="list-title">Python workshop</span>
+          <span class="list-desc">Material I wrote to teach Python to UFRN's rocket-design team.</span>
+        </a>
+        <span class="list-meta">teaching</span>
+      </div>
+
+    </div>
+  </section>
+
+  <section>
+    <h2>Background</h2>
+    <p style="color: var(--text-dim); margin: 0;">
+      Engineering background from UFRN (DCA) with a thesis on embedded control for differential-drive
+      robots. Years of hands-on robotics work with the Poti team — computer vision, control, embedded C.
+      Now focused on making modern CV models <em>actually usable</em> in production Python.
+    </p>
+  </section>
+
+  <footer>
+    <span class="mono">© Luís Condados</span>
+    <span><a href="https://github.com/gabriellgpc/gabriellgpc.github.io/blob/master/README.md">Older projects →</a></span>
+  </footer>
+
+</main>
+</body>
+</html>
